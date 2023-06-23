@@ -1,0 +1,67 @@
+version: '3.4'
+
+services:
+  mysql:
+    platform: linux/amd64
+    image: gcr.io/trillian-opensource-ci/db_server:v1.4.0
+    env_file:
+        - ".env"
+
+    restart: always # keep the MySQL server running
+    healthcheck:
+      test: ["CMD", "/etc/init.d/mysql", "status"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+    ports:
+      - "3306:3306"
+
+  trillian-log-server:
+    image: gcr.io/projectsigstore/trillian_log_server@sha256:f850a0defd089ea844822030c67ae05bc93c91168a7dd4aceb0b6648c39f696b
+    command: [
+      "--storage_system=mysql",
+      "--mysql_uri=test:tset@tcp(mysql:3306)/chrono",
+      "--rpc_endpoint=0.0.0.0:8090",
+      "--http_endpoint=0.0.0.0:8091",
+      "--alsologtostderr",
+    ]
+    restart: always # retry while mysql is starting up
+    ports:
+      - "8090:8090"
+      - "8091:8091"
+    depends_on:
+      - mysql
+
+  trillian-log-signer:
+    image: gcr.io/projectsigstore/trillian_log_signer@sha256:fe90d523f6617974f70878918e4b31d49b2b46a86024bb2d6b01d2bbfed8edbf
+    command: [
+      "--storage_system=mysql",
+      "--mysql_uri=test:tset@tcp(mysql:3306)/chrono",
+      "--rpc_endpoint=0.0.0.0:8090",
+      "--http_endpoint=0.0.0.0:8091",
+      "--force_master",
+      "--alsologtostderr",
+    ]
+    restart: always # retry while mysql is starting up
+    ports:
+      - "8092:8091"
+    depends_on:
+      - mysql
+
+networks:
+  proxy:
+    name: proxy
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.name: dockerfront
+
+  backend:
+    name: backend
+    driver: bridge
+    internal: true
+    driver_opts:
+      com.docker.network.bridge.name: dockerinter
+
+
+
