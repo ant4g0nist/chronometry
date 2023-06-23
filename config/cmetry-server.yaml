@@ -1,0 +1,46 @@
+version: 1
+
+server:
+  server_name: localhost
+  http_bind: localhost:8008
+
+# Global database (postgres) connection pool
+  database:
+    username: test
+    password: tset
+    dbname: chrono
+
+    server: localhost
+    port: 3306 
+    sslmode: disable
+    timezone: Asia/Shanghai 
+
+    max_open_conns: 90
+    max_idle_conns: 5
+    conn_max_lifetime: -1
+
+ # Chronometry server's keys
+  private_key: ~/.chronometry/id_ed25519
+  passphrase: "password"
+
+  # log config
+  logger:
+    log_level: debug 
+
+    access_log: ./resources/logs/access.log
+    error_log: ./resources/logs/error.log
+
+    # megabytes
+    max_size:    500 
+
+    # Max Number of Backups
+    max_backups: 3
+
+    # MaxAge in days
+    max_age:     28
+
+  # Trillian
+  trillian:
+    # current config assumes we can connect to trillian server
+    address: 127.0.0.1 #trillian-log-server
+    port: 8090
