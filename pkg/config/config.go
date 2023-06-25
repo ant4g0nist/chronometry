@@ -20,6 +20,7 @@ import (
 
 	"github.com/ant4g0nist/chronometry/pkg/core/signature"
 	"github.com/ant4g0nist/chronometry/pkg/util"
+
 	"gopkg.in/yaml.v2"
 )
 

@@ -21,8 +21,6 @@ import (
 	"github.com/ant4g0nist/chronometry/cmds"
 	"github.com/ant4g0nist/chronometry/internal/log"
 
-	// "github.com/ant4g0nist/chronometry/model"
-
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"

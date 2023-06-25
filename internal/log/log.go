@@ -18,7 +18,6 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/ant4g0nist/chronometry/pkg/config"
 	"github.com/gofiber/fiber/v2"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
@@ -30,7 +29,17 @@ var (
 	loggerOnce sync.Once
 )
 
-func InitLogger(cfg config.LoggerOpts) {
+type LoggerOpts struct {
+	LogLevel      string `yaml:"log_level"`
+	AccessLogFile string `yaml:"access_log"`
+	ErrorLogFile  string `yaml:"error_log"`
+
+	MaxSize    int `yaml:"max_size"`
+	MaxBackups int `yaml:"max_backups"`
+	MaxAge     int `yaml:"max_age"`
+}
+
+func InitLogger(cfg LoggerOpts) {
 	loggerOnce.Do(func() {
 
 		// Create a new encoder configuration

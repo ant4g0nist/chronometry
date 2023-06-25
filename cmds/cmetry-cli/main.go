@@ -14,10 +14,8 @@
 
 package main
 
-import (
-	"github.com/ant4g0nist/chronometry/cmds/cmetry-cli/app"
-)
+import "github.com/ant4g0nist/chronometry/cmds/cmetry-cli/cli"
 
 func main() {
-	app.Execute()
+	cli.Execute()
 }
