@@ -27,7 +27,7 @@ import (
 /*
 This function verifies a given Report Blob file.
 */
-func Verify(fileRef string) error {
+func VerifyFile(fileRef string) error {
 
 	color.Green("⌛️Verifying signature...")
 
@@ -42,23 +42,59 @@ func Verify(fileRef string) error {
 	fmt.Printf("publicKey: %s\n", util.Red+base64.StdEncoding.EncodeToString(publicKey)+util.Reset)
 	fmt.Printf("signature: %s\n", util.Green+base64.StdEncoding.EncodeToString(signature)+util.Reset)
 
-	// calculate hash of the entire report
-	reportHash := sha256.New()
-	reportHash.Write([]byte(signerBlob.Report.Version))
-	reportHash.Write([]byte(signerBlob.Report.Author))
-	reportHash.Write([]byte(signerBlob.Report.Title))
-	reportHash.Write([]byte(signerBlob.Report.Description))
-	reportHash.Write([]byte(signerBlob.Report.Platform))
-	reportHash.Write([]byte(signerBlob.Report.Attributes))
-	reportHash.Write([]byte(signerBlob.Report.Severity))
-	reportHash.Write([]byte(signerBlob.Report.Attachments))
-
-	// verify signature
-	if !ed25519.Verify(publicKey, reportHash.Sum(nil), []byte(signature)) {
+	// calculate hash of the entire report & verify signature
+	if !verifyReport(signerBlob.Report, publicKey, signature) {
 		color.Red("❌Signature verification failed")
 		os.Exit(254)
 	}
 
 	color.Green("✅Signature verification successful")
 	return nil
+}
+
+/*
+This function verifies given Report Entry.
+*/
+func VerifyReport(report Report, publicKey string, signature string) bool {
+	color.Green("⌛️Verifying signature...")
+
+	// decode base64
+	publicKeyBytes, err := base64.StdEncoding.DecodeString(publicKey)
+	if err != nil {
+		color.Red("❌Signature verification failed")
+		return false
+	}
+
+	signatureBytes, err := base64.StdEncoding.DecodeString(signature)
+	if err != nil {
+		color.Red("❌Signature verification failed")
+		return false
+	}
+
+	// verify signature
+	if !verifyReport(report, publicKeyBytes, signatureBytes) {
+		color.Red("❌Signature verification failed")
+		return false
+	}
+
+	return true
+}
+
+/*
+This function verifies given Report.
+*/
+func verifyReport(report Report, publicKey []byte, signature []byte) bool {
+	// calculate hash of the entire report
+	reportHash := sha256.New()
+	reportHash.Write([]byte(report.Version))
+	reportHash.Write([]byte(report.Author))
+	reportHash.Write([]byte(report.Title))
+	reportHash.Write([]byte(report.Description))
+	reportHash.Write([]byte(report.Platform))
+	reportHash.Write([]byte(report.Attributes))
+	reportHash.Write([]byte(report.Severity))
+	reportHash.Write([]byte(report.Attachments))
+
+	// verify signature
+	return ed25519.Verify(publicKey, reportHash.Sum(nil), []byte(signature))
 }

@@ -36,7 +36,7 @@ var (
 				os.Exit(1)
 			}
 
-			signature.Verify(report)
+			signature.VerifyFile(report)
 
 			return nil
 		},

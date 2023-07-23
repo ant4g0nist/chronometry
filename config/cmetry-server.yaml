@@ -1,8 +1,9 @@
 version: 1
 
 server:
-  server_name: localhost
+  hostname: localhost
   http_bind: localhost:8008
+
 
 # Global database (postgres) connection pool
   database:
@@ -19,8 +20,10 @@ server:
     max_idle_conns: 5
     conn_max_lifetime: -1
 
- # Chronometry server's keys
+  # Chronometry server's keys
   private_key: ~/.chronometry/id_ed25519
+
+  # Password to decrypt signer private key
   passphrase: "password"
 
   # log config
@@ -44,3 +47,10 @@ server:
     # current config assumes we can connect to trillian server
     address: 127.0.0.1 #trillian-log-server
     port: 8090
+
+    # Trillian tree id
+    # tree_id: 6154096183676422048
+  
+  redis:
+    address: 127.0.0.1
+    port: 6379

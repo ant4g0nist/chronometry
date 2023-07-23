@@ -23,3 +23,7 @@ An append-only Log mode, analogous to the original Certificate Transparency logs
 
 ---
 - Author: [ant4g0nist](https://twitter.com/ant4g0nist)
+
+
+## Contributions
+- SigStore

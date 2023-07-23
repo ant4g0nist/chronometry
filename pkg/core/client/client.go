@@ -1,0 +1,230 @@
+// Copyright 2023 WeFuzz Research and Development B.V.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//	http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+package client
+
+import (
+	"bytes"
+	"encoding/json"
+	"errors"
+	"fmt"
+	"io"
+	"io/ioutil"
+	"net/http"
+)
+
+type RecordEntryResponse struct {
+	Data    Data `json:"data"`
+	Success bool `json:"success"`
+}
+
+type Entry struct {
+	ETag     string            `json:"ETag"`
+	Location string            `json:"Location"`
+	Payload  map[string]Record `json:"Payload"`
+}
+
+type Record struct {
+	Body string `json:"body"`
+	// Version        string       `json:"version"`
+	// Description    string       `json:"description"`
+	// Attributes     string       `json:"attributes"`
+	// Author         string       `json:"author"`
+	// Platform       string       `json:"platform"`
+	// Service        string       `json:"service"`
+	// Severity       string       `json:"severity"`
+	// Attachments    string       `json:"attachments"`
+	// PubKey         string       `json:"pubKey"`
+	// Signature      string       `json:"signature"`
+	IntegratedTime int64        `json:"integratedTime"`
+	LogID          string       `json:"logID"`
+	LogIndex       int64        `json:"logIndex"`
+	Verification   Verification `json:"verification"`
+}
+
+type InclusionProof struct {
+	Checkpoint interface{} `json:"checkpoint"`
+	Hashes     []string    `json:"hashes"`
+	LogIndex   int64       `json:"logIndex"`
+	RootHash   string      `json:"rootHash"`
+	TreeSize   int64       `json:"treeSize"`
+}
+
+type Verification struct {
+	InclusionProof *InclusionProof `json:"inclusionProof"`
+
+	SignedEntryTimestamp string `json:"signedEntryTimestamp"`
+}
+
+type Data struct {
+	Entry Entry  `json:"entry"`
+	Error string `json:"error"`
+}
+
+func (r *RecordEntryResponse) PrettyPrint() {
+	entry := r.Data.Entry
+	fmt.Println("ETag:", entry.ETag)
+	fmt.Println("Location:", entry.Location)
+
+	for key, record := range entry.Payload {
+		fmt.Println("Payload:")
+		fmt.Println("  Key:", key)
+		fmt.Println("  IntegratedTime:", record.IntegratedTime)
+		fmt.Println("  LogID:", record.LogID)
+		fmt.Println("  LogIndex:", record.LogIndex)
+		fmt.Println("  Verification:")
+		fmt.Println("    InclusionProof:")
+		fmt.Println("      Checkpoint:", record.Verification.InclusionProof.Checkpoint)
+		fmt.Println("      Hashes:", record.Verification.InclusionProof.Hashes)
+		fmt.Println("      LogIndex:", record.Verification.InclusionProof.LogIndex)
+		fmt.Println("      RootHash:", record.Verification.InclusionProof.RootHash)
+		fmt.Println("      TreeSize:", record.Verification.InclusionProof.TreeSize)
+		fmt.Println("    SignedEntryTimestamp:", record.Verification.SignedEntryTimestamp)
+	}
+}
+
+/*
+Check if the server is reachable
+*/
+func CheckServerReachable(server string) bool {
+	url := server + "/health"
+
+	resp, err := http.Get(url)
+	if err != nil {
+		return false
+	}
+
+	if resp.StatusCode != http.StatusOK {
+		return false
+	}
+
+	return true
+}
+
+/*
+Upload a vulnerability report to the server
+*/
+func UploadReport(server string, report string) error {
+	url := server + "/record"
+
+	// read report
+	body, err := ioutil.ReadFile(report)
+	if err != nil {
+		return err
+	}
+
+	client := &http.Client{}
+	req, err := http.NewRequest("POST", url, bytes.NewBuffer(body))
+
+	if err != nil {
+		fmt.Println(err)
+		return err
+	}
+	req.Header.Add("Content-Type", "application/json")
+
+	res, err := client.Do(req)
+	if err != nil {
+
+		return err
+	}
+	defer res.Body.Close()
+
+	if loadAndPrint(res.Body) != nil {
+		fmt.Println("Error uploading report")
+	} else {
+		fmt.Println("Report uploaded successfully")
+	}
+
+	return nil
+}
+
+/*
+Fetch a vulnerability report from the server by index
+*/
+func FetchReportByIndex(server string, index int) error {
+	url := fmt.Sprintf("%s/index/%d", server, index)
+
+	client := &http.Client{}
+	req, err := http.NewRequest("GET", url, nil)
+	if err != nil {
+		fmt.Println(err)
+		return err
+	}
+	req.Header.Add("Content-Type", "application/json")
+
+	res, err := client.Do(req)
+	if err != nil {
+		fmt.Println(err)
+		return err
+	}
+
+	if loadAndPrint(res.Body) != nil {
+		fmt.Println("Error fetching report")
+	} else {
+		fmt.Println("Report fetched successfully")
+	}
+
+	return nil
+}
+
+/*
+Fetch a vulnerability report from the server by record id
+*/
+func FetchReportByRecord(server string, record string) error {
+	url := fmt.Sprintf("%s/record/%s", server, record)
+
+	client := &http.Client{}
+	req, err := http.NewRequest("GET", url, nil)
+	if err != nil {
+		fmt.Println(err)
+		return err
+	}
+	req.Header.Add("Content-Type", "application/json")
+
+	res, err := client.Do(req)
+	if err != nil {
+		fmt.Println(err)
+		return err
+	}
+
+	if loadAndPrint(res.Body) != nil {
+		fmt.Println("Error fetching report")
+	} else {
+		fmt.Println("Report fetched successfully")
+	}
+
+	return nil
+}
+
+func loadAndPrint(bodyReader io.ReadCloser) error {
+	body, err := ioutil.ReadAll(bodyReader)
+	if err != nil {
+		fmt.Println(err)
+		return err
+	}
+
+	// parse json
+	var f RecordEntryResponse
+	err = json.Unmarshal(body, &f)
+	if err != nil {
+		fmt.Println(err)
+		return err
+	}
+
+	if f.Success {
+		f.PrettyPrint()
+		return nil
+	} else {
+		return errors.New(f.Data.Error)
+	}
+}

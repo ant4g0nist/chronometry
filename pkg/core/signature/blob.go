@@ -38,7 +38,7 @@ func GenerateMessage(targetFile string, publicKey ed25519.PublicKey, privateKey 
 	}
 
 	// Sign the message and generate a signed blob
-	signedBlob := SignMessage(rep, publicKey, privateKey)
+	signedBlob := SignReport(rep, publicKey, privateKey)
 
 	color.Green("✅Signed blob generated successfully")
 	return signedBlob

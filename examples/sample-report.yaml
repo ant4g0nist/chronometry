@@ -1,4 +1,4 @@
-version: 1
+version: 155
 
 author:
   name: John Doee
@@ -7,7 +7,7 @@ author:
 
 platform: HackerOne
 
-title: Sample Vulnerability Report
+title: Sample Vulnerability Report 2
 
 description: 
   This is a sample vulnerability report. It is intended to demonstrate the

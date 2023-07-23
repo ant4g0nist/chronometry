@@ -27,7 +27,6 @@ import (
 	"encoding/pem"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 
@@ -68,7 +67,7 @@ func SavePublicKey(publicKey ed25519.PublicKey, keys_folder string, name string,
 	// Write the public key to a file
 	pubKeyPath := filepath.Join(keys_folder, name+".pub")
 
-	if err := ioutil.WriteFile(pubKeyPath, pem.EncodeToMemory(&pubKeyPEM), 0644); err != nil {
+	if err := os.WriteFile(pubKeyPath, pem.EncodeToMemory(&pubKeyPEM), 0644); err != nil {
 		color.Red("❌Error in writing public key to file")
 		fmt.Println(err)
 		os.Exit(1)
@@ -137,7 +136,7 @@ func WritePEMToFile(name string, path string, pemBlock *pem.Block, yes bool) err
 		}
 	}
 
-	if err := ioutil.WriteFile(path, pem.EncodeToMemory(pemBlock), 0600); err != nil {
+	if err := os.WriteFile(path, pem.EncodeToMemory(pemBlock), 0600); err != nil {
 		return err
 	}
 
@@ -248,7 +247,7 @@ func IsEncryptedPEMBlock(block *pem.Block) bool {
 func ReadPEMFromFile(path string, passphrase string) (ed25519.PublicKey, ed25519.PrivateKey, error) {
 
 	// Read the private key from a file
-	keyBytes, err := ioutil.ReadFile(path)
+	keyBytes, err := os.ReadFile(path)
 	if err != nil {
 		panic(fmt.Errorf("failed to read private key file: %w", err))
 	}

@@ -13,6 +13,8 @@
 // limitations under the License.
 package config
 
+import "github.com/mediocregopher/radix/v4"
+
 // A Path on the filesystem.
 type Path string
 
@@ -46,6 +48,8 @@ type DatabaseOptions struct {
 
 // Global config
 type ServerConfig struct {
+	// Hostname
+	Hostname string `yaml:"hostname"`
 
 	// Home Server bind address
 	HTTPBind string `yaml:"http_bind"`
@@ -63,11 +67,22 @@ type ServerConfig struct {
 	PrivateKeyPath string `yaml:"private_key"`
 	Passphrase     string `yaml:"passphrase"`
 
-	Trillian Trillian `yaml:"trillian"`
+	Trillian    Trillian `yaml:"trillian"`
+	Redis       Redis    `yaml:"redis"`
+	RedisClient radix.Client
 }
 
 // Google Trillian Server config
 type Trillian struct {
+	Address string `yaml:"address"`
+	Port    int64  `yaml:"port"`
+
+	// Trillian Merkle Tree ID
+	TreeID uint `yaml:"tree_id"`
+}
+
+// Redis config
+type Redis struct {
 	Address string `yaml:"address"`
 	Port    int64  `yaml:"port"`
 }

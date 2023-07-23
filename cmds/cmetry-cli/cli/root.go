@@ -36,6 +36,7 @@ func Execute() {
 	rootCmd.AddCommand(keysCmd)
 	rootCmd.AddCommand(publickeyCmd)
 	rootCmd.AddCommand(signCmd)
+	rootCmd.AddCommand(recordCmd)
 
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Println(util.Red, err.Error())
