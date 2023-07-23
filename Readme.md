@@ -21,6 +21,33 @@ Trillian implements a Merkle tree whose contents are served from a data storage 
 
 An append-only Log mode, analogous to the original Certificate Transparency logs. In this mode, the Merkle tree is effectively filled up from the left, giving a dense Merkle tree.
 
+
+## Usage
+### Installation
+#### Client
+```sh
+$ git clone github.com/ant4g0nist/chronometry
+$ cd chronometry
+$ 
+```
+```
+
+### Key Generation
+
+### Record a PoH
+
+### Verify a PoH
+
+### Verify a PoH using the CLI
+
+### Verify a PoH using the API
+
+### Verify a PoH using the Web UI
+
+
+
+
+
 ---
 - Author: [ant4g0nist](https://twitter.com/ant4g0nist)
 
