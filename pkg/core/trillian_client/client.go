@@ -179,7 +179,7 @@ func CreateEntry(redis radix.Client, ctx context.Context, api *API, cfg *config.
 		RootHash:   hex.EncodeToString(root.RootHash),
 		LogIndex:   queuedLeaf.LeafIndex,
 		Hashes:     hashes,
-		Checkpoint: scBytes,
+		Checkpoint: string(scBytes),
 	}
 
 	// base64 encode the signature
@@ -389,7 +389,7 @@ func logEntryFromLeaf(ctx context.Context, cfg *config.CMConfig, tc TrillianClie
 		RootHash:   hex.EncodeToString(root.RootHash),
 		LogIndex:   leaf.LeafIndex,
 		Hashes:     hashes,
-		Checkpoint: scBytes,
+		Checkpoint: string(scBytes),
 	}
 
 	uuid := hex.EncodeToString(leaf.MerkleLeafHash)

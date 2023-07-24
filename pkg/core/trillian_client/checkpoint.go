@@ -15,13 +15,17 @@
 package trillian_client
 
 import (
+	"bufio"
+	"bytes"
 	"context"
 	"crypto/ed25519"
 	"crypto/sha256"
 	"crypto/x509"
 	"encoding/base64"
 	"encoding/binary"
+	"errors"
 	"fmt"
+	"strconv"
 	"strings"
 	"time"
 
@@ -89,6 +93,64 @@ func (c Checkpoint) MarshalCheckpoint() ([]byte, error) {
 	return []byte(c.String()), nil
 }
 
+// UnmarshalText parses the common formatted checkpoint data and stores the result
+// in the Checkpoint.
+//
+// The supplied data is expected to begin with the following 3 lines of text,
+// each followed by a newline:
+// <ecosystem/version string>
+// <decimal representation of log size>
+// <base64 representation of root hash>
+// <optional non-empty line of other content>...
+// <optional non-empty line of other content>...
+//
+// This will discard any content found after the checkpoint (including signatures)
+func (c *Checkpoint) UnmarshalCheckpoint(data []byte) error {
+	l := bytes.Split(data, []byte("\n"))
+	if len(l) < 4 {
+		return errors.New("invalid checkpoint - too few newlines")
+	}
+	origin := string(l[0])
+	if len(origin) == 0 {
+		return errors.New("invalid checkpoint - empty ecosystem")
+	}
+	size, err := strconv.ParseUint(string(l[1]), 10, 64)
+	if err != nil {
+		return fmt.Errorf("invalid checkpoint - size invalid: %w", err)
+	}
+	h, err := base64.StdEncoding.DecodeString(string(l[2]))
+	if err != nil {
+		return fmt.Errorf("invalid checkpoint - invalid hash: %w", err)
+	}
+	*c = Checkpoint{
+		Origin: origin,
+		Size:   size,
+		Hash:   h,
+	}
+	if len(l) >= 3 {
+		for _, line := range l[3:] {
+			if len(line) == 0 {
+				break
+			}
+			c.OtherContent = append(c.OtherContent, string(line))
+		}
+	}
+	return nil
+}
+
+func (r *SignedCheckpoint) UnmarshalText(data []byte) error {
+	s := SignedNote{}
+	if err := s.UnmarshalText([]byte(data)); err != nil {
+		return fmt.Errorf("unmarshalling signed note: %w", err)
+	}
+	c := Checkpoint{}
+	if err := c.UnmarshalCheckpoint([]byte(s.Note)); err != nil {
+		return fmt.Errorf("unmarshalling checkpoint: %w", err)
+	}
+	*r = SignedCheckpoint{Checkpoint: c, SignedNote: s}
+	return nil
+}
+
 func (r *SignedCheckpoint) SetTimestamp(timestamp uint64) {
 	var ts uint64
 	for i, val := range r.OtherContent {
@@ -137,6 +199,8 @@ func CreateAndSignCheckpoint(cfg *config.CMConfig, ctx context.Context, hostname
 		return nil, fmt.Errorf("error marshalling checkpoint: %v", err)
 	}
 
+	fmt.Println("scBytes: ", string(scBytes))
+
 	return scBytes, nil
 }
 
@@ -183,4 +247,64 @@ func (s *SignedNote) Sign(identity string, signer Signer) (*note.Signature, erro
 
 	s.Signatures = append(s.Signatures, signature)
 	return &signature, nil
+}
+
+// UnmarshalText parses the common formatted signed note data and stores the result
+// in the SignedNote. THIS DOES NOT VERIFY SIGNATURES INSIDE THE CONTENT!
+//
+// The supplied data is expected to contain a single Note, followed by a single
+// line with no comment, followed by one or more lines with the following format:
+//
+// \u2014 name signature
+//
+//   - name is the string associated with the signer
+//   - signature is a base64 encoded string; the first 4 bytes of the decoded value is a
+//     hint to the public key; it is a big-endian encoded uint32 representing the first
+//     4 bytes of the SHA256 hash of the public key
+func (s *SignedNote) UnmarshalText(data []byte) error {
+	sigSplit := []byte("\n\n")
+	// Must end with signature block preceded by blank line.
+	split := bytes.LastIndex(data, sigSplit)
+	if split < 0 {
+		return errors.New("malformed note")
+	}
+	text, data := data[:split+1], data[split+2:]
+	if len(data) == 0 || data[len(data)-1] != '\n' {
+		return errors.New("malformed note")
+	}
+
+	sn := SignedNote{
+		Note: string(text),
+	}
+
+	b := bufio.NewScanner(bytes.NewReader(data))
+	for b.Scan() {
+		var name, signature string
+		if _, err := fmt.Fscanf(strings.NewReader(b.Text()), "\u2014 %s %s\n", &name, &signature); err != nil {
+			return fmt.Errorf("parsing signature: %w", err)
+		}
+
+		sigBytes, err := base64.StdEncoding.DecodeString(signature)
+		if err != nil {
+			return fmt.Errorf("decoding signature: %w", err)
+		}
+		if len(sigBytes) < 5 {
+			return errors.New("signature is too small")
+		}
+
+		sig := note.Signature{
+			Name:   name,
+			Hash:   binary.BigEndian.Uint32(sigBytes[0:4]),
+			Base64: base64.StdEncoding.EncodeToString(sigBytes[4:]),
+		}
+		sn.Signatures = append(sn.Signatures, sig)
+
+	}
+	if len(sn.Signatures) == 0 {
+		return errors.New("no signatures found in input")
+	}
+
+	// copy sc to s
+	*s = sn
+	return nil
 }
