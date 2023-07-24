@@ -55,19 +55,19 @@ func VerifyFile(fileRef string) error {
 /*
 This function verifies given Report Entry.
 */
-func VerifyReport(report Report, publicKey string, signature string) bool {
+func VerifyReportWithBase64(report Report, publicKey string, signature string) bool {
 	color.Green("⌛️Verifying signature...")
 
 	// decode base64
 	publicKeyBytes, err := base64.StdEncoding.DecodeString(publicKey)
 	if err != nil {
-		color.Red("❌Signature verification failed")
+		color.Red("❌Invalid public key")
 		return false
 	}
 
 	signatureBytes, err := base64.StdEncoding.DecodeString(signature)
 	if err != nil {
-		color.Red("❌Signature verification failed")
+		color.Red("❌Invalid signature")
 		return false
 	}
 
@@ -81,13 +81,31 @@ func VerifyReport(report Report, publicKey string, signature string) bool {
 }
 
 /*
+This function verifies given Report Entry with public key as ed25519.PublicKey.
+*/
+func VerifyReportWithPublicKey(report Report, publicKey ed25519.PublicKey, signature []byte) bool {
+	color.Green("⌛️Verifying signature...")
+
+	// verify signature
+	if !verifyReport(report, publicKey, signature) {
+		color.Red("❌Signature verification failed")
+		return false
+	}
+
+	return true
+}
+
+/*
 This function verifies given Report.
 */
 func verifyReport(report Report, publicKey []byte, signature []byte) bool {
 	// calculate hash of the entire report
+	authorHash := base64.URLEncoding.EncodeToString(Hash(report.Author))
+
 	reportHash := sha256.New()
 	reportHash.Write([]byte(report.Version))
-	reportHash.Write([]byte(report.Author))
+	reportHash.Write([]byte(authorHash))
+	reportHash.Write([]byte(report.AuthorDetailsHash))
 	reportHash.Write([]byte(report.Title))
 	reportHash.Write([]byte(report.Description))
 	reportHash.Write([]byte(report.Platform))

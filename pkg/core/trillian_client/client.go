@@ -203,7 +203,7 @@ func CreateEntry(redis radix.Client, ctx context.Context, api *API, cfg *config.
 	logEntry = cclient.Entry{
 		Payload:  payload,
 		ETag:     uuid,
-		Location: cfg.ServerConfig.HTTPBind + "/record/" + entryID,
+		Location: cfg.ServerConfig.HTTPBind + "/api/v1/log/entries?uuid=" + entryID,
 	}
 
 	return logEntry, nil

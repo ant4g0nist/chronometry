@@ -151,5 +151,16 @@ func LoadReport(fileRef string) (VulnerabilityReport, error) {
 		return v, err
 	}
 
+	// validate the report
+	// Author name should not be empty or more than 32 bytes
+	if len(v.Author.Name) == 0 || len(v.Author.Name) > 32 {
+		return v, ErrorInvalidAuthorName
+	}
+
+	// Author email should not be empty or more than 32 bytes
+	if len(v.Author.Email) == 0 || len(v.Author.Email) > 32 {
+		return v, ErrorInvalidAuthorEmail
+	}
+
 	return v, nil
 }

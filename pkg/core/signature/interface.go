@@ -13,7 +13,9 @@
 // limitations under the License.
 package signature
 
-import "errors"
+import (
+	"github.com/ant4g0nist/chronometry/pkg/core/report"
+)
 
 /*
 This is the vulnerability report structure YAML file passed as input to generate the Signature.
@@ -34,6 +36,9 @@ type Report struct {
 	// Author of the report
 	Author string `json:"Author"`
 
+	// Author of the report
+	AuthorDetailsHash string `json:"AuthorDetailsHash"`
+
 	// Platform of the report
 	Platform string `json:"Platform"`
 
@@ -49,47 +54,40 @@ func (r *Report) Validate() error {
 		Every attribute of the report must be a 32 byte base64 encoded hash.
 	*/
 	if len(r.Version) != 44 {
-		return ErrInvalidVersion
+		return report.ErrInvalidVersion
 	}
 
 	if len(r.Title) != 44 {
-		return ErrorInvalidTitle
+		return report.ErrorInvalidTitle
 	}
 
 	if len(r.Description) != 44 {
-		return ErrorInvalidDescription
+		return report.ErrorInvalidDescription
 	}
 
 	if len(r.Attributes) != 44 {
-		return ErrorInvalidAttributes
+		return report.ErrorInvalidAttributes
 	}
 
-	if len(r.Author) != 44 {
-		return ErrorInvalidAuthor
+	if len(r.AuthorDetailsHash) != 44 {
+		return report.ErrorInvalidAuthor
+	}
+
+	if len(r.Author) > 32 {
+		return report.ErrorInvalidAuthorName
 	}
 
 	if len(r.Platform) != 44 {
-		return ErrorInvalidPlatform
+		return report.ErrorInvalidPlatform
 	}
 
 	if len(r.Severity) != 44 {
-		return ErrorInvalidSeverity
+		return report.ErrorInvalidSeverity
 	}
 
 	if len(r.Attachments) != 44 {
-		return ErrorInvalidAttachments
+		return report.ErrorInvalidAttachments
 	}
 
 	return nil
 }
-
-var (
-	ErrInvalidVersion       = errors.New("invalid version")
-	ErrorInvalidTitle       = errors.New("invalid title")
-	ErrorInvalidDescription = errors.New("invalid description")
-	ErrorInvalidAttributes  = errors.New("invalid attributes")
-	ErrorInvalidAuthor      = errors.New("invalid author")
-	ErrorInvalidPlatform    = errors.New("invalid platform")
-	ErrorInvalidSeverity    = errors.New("invalid severity")
-	ErrorInvalidAttachments = errors.New("invalid attachments")
-)

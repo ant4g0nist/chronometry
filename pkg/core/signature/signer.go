@@ -18,6 +18,7 @@ import (
 	"crypto/sha256"
 	"encoding/base64"
 	"encoding/json"
+	"fmt"
 	"log"
 	"os"
 
@@ -95,10 +96,18 @@ func (s *SignerBlob) SaveBlobToFile(output string) bool {
 }
 
 // Signer creates digital signatures over a message using a specified key pair
-func SignReport(report report.VulnerabilityReport, publicKey ed25519.PublicKey, privateKey ed25519.PrivateKey) SignerBlob {
+func SignReport(report report.VulnerabilityReport, publicKey ed25519.PublicKey, privateKey ed25519.PrivateKey, showAuthor bool) SignerBlob {
 
 	// Sign the message and generate a signed blob
-	authorHash := base64.URLEncoding.EncodeToString(report.Author.Hash())
+	authorDetailsHash := base64.URLEncoding.EncodeToString(report.Author.Hash())
+
+	author := "Anonymous"
+
+	if showAuthor {
+		author = report.Author.Name
+	}
+
+	authorHash := base64.URLEncoding.EncodeToString(Hash(author))
 	titleHash := base64.URLEncoding.EncodeToString(Hash(report.Title))
 	descriptionHash := base64.URLEncoding.EncodeToString(Hash(report.Description))
 	platformHash := base64.URLEncoding.EncodeToString(Hash(string(report.Platform)))
@@ -125,6 +134,7 @@ func SignReport(report report.VulnerabilityReport, publicKey ed25519.PublicKey, 
 	reportHash := sha256.New()
 	reportHash.Write([]byte(versionHash))
 	reportHash.Write([]byte(authorHash))
+	reportHash.Write([]byte(authorDetailsHash))
 	reportHash.Write([]byte(titleHash))
 	reportHash.Write([]byte(descriptionHash))
 	reportHash.Write([]byte(platformHash))
@@ -138,14 +148,15 @@ func SignReport(report report.VulnerabilityReport, publicKey ed25519.PublicKey, 
 	// create a signed blob
 	signedBlob := SignerBlob{
 		Report: Report{
-			Version:     versionHash,
-			Author:      authorHash,
-			Title:       titleHash,
-			Description: descriptionHash,
-			Platform:    platformHash,
-			Attributes:  attributeHashSum,
-			Severity:    severityHash,
-			Attachments: attachmentsHashSum,
+			Version:           versionHash,
+			Author:            author,
+			AuthorDetailsHash: authorDetailsHash,
+			Title:             titleHash,
+			Description:       descriptionHash,
+			Platform:          platformHash,
+			Attributes:        attributeHashSum,
+			Severity:          severityHash,
+			Attachments:       attachmentsHashSum,
 		},
 		PublicKey: publicKey,
 		Signature: signature,
@@ -164,7 +175,10 @@ func Hash(data string) []byte {
 func SignBlob(report Report, publicKey ed25519.PublicKey, privateKey ed25519.PrivateKey) SignerBlob {
 
 	// Sign the message and generate a signed blob
+	fmt.Println("Signing the report for author: ", report.Author)
 	authorHash := base64.URLEncoding.EncodeToString(Hash(report.Author))
+	authorDetailsHash := base64.URLEncoding.EncodeToString(Hash(report.AuthorDetailsHash))
+
 	titleHash := base64.URLEncoding.EncodeToString(Hash(report.Title))
 	descriptionHash := base64.URLEncoding.EncodeToString(Hash(report.Description))
 	platformHash := base64.URLEncoding.EncodeToString(Hash(string(report.Platform)))
@@ -178,6 +192,7 @@ func SignBlob(report Report, publicKey ed25519.PublicKey, privateKey ed25519.Pri
 	reportHash := sha256.New()
 	reportHash.Write([]byte(versionHash))
 	reportHash.Write([]byte(authorHash))
+	reportHash.Write([]byte(authorDetailsHash))
 	reportHash.Write([]byte(titleHash))
 	reportHash.Write([]byte(descriptionHash))
 	reportHash.Write([]byte(platformHash))
@@ -191,14 +206,15 @@ func SignBlob(report Report, publicKey ed25519.PublicKey, privateKey ed25519.Pri
 	// create a signed blob
 	signedBlob := SignerBlob{
 		Report: Report{
-			Version:     versionHash,
-			Author:      authorHash,
-			Title:       titleHash,
-			Description: descriptionHash,
-			Platform:    platformHash,
-			Attributes:  attributeHash,
-			Severity:    severityHash,
-			Attachments: string(attachmentsHash),
+			Version:           versionHash,
+			Author:            report.Author,
+			AuthorDetailsHash: authorDetailsHash,
+			Title:             titleHash,
+			Description:       descriptionHash,
+			Platform:          platformHash,
+			Attributes:        attributeHash,
+			Severity:          severityHash,
+			Attachments:       string(attachmentsHash),
 		},
 		PublicKey: publicKey,
 		Signature: signature,

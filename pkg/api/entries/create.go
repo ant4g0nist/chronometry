@@ -48,7 +48,7 @@ func CreateEntry(ctx *fiber.Ctx) error {
 	}
 
 	// verify signature
-	if !signature.VerifyReport(createEntryRequest.Report, createEntryRequest.PublicKey, createEntryRequest.UserSignature) {
+	if !signature.VerifyReportWithBase64(createEntryRequest.Report, createEntryRequest.PublicKey, createEntryRequest.UserSignature) {
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{
 			"success": false,
 			"data": fiber.Map{

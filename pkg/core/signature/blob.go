@@ -27,7 +27,7 @@ import (
 This function is used to generate a signed, crymessage to be posted on
 the Trillian data store. It takes a target file as input
 */
-func GenerateMessage(targetFile string, publicKey ed25519.PublicKey, privateKey ed25519.PrivateKey) SignerBlob {
+func GenerateMessage(targetFile string, publicKey ed25519.PublicKey, privateKey ed25519.PrivateKey, showAuthor bool) SignerBlob {
 	color.Green("⌛️Generating signed blob for %s", targetFile)
 
 	// load the report
@@ -38,7 +38,7 @@ func GenerateMessage(targetFile string, publicKey ed25519.PublicKey, privateKey 
 	}
 
 	// Sign the message and generate a signed blob
-	signedBlob := SignReport(rep, publicKey, privateKey)
+	signedBlob := SignReport(rep, publicKey, privateKey, showAuthor)
 
 	color.Green("✅Signed blob generated successfully")
 	return signedBlob

@@ -15,12 +15,17 @@ package client
 
 import (
 	"bytes"
+	"encoding/base64"
 	"encoding/json"
 	"errors"
 	"fmt"
 	"io"
 	"io/ioutil"
 	"net/http"
+
+	"github.com/ant4g0nist/chronometry/pkg/core/signature"
+	"github.com/ant4g0nist/chronometry/pkg/util"
+	"github.com/fatih/color"
 )
 
 type RecordEntryResponse struct {
@@ -90,6 +95,7 @@ func (r *RecordEntryResponse) PrettyPrint() {
 		fmt.Println("      RootHash:", record.Verification.InclusionProof.RootHash)
 		fmt.Println("      TreeSize:", record.Verification.InclusionProof.TreeSize)
 		fmt.Println("    SignedEntryTimestamp:", record.Verification.SignedEntryTimestamp)
+		// Author
 	}
 }
 
@@ -139,8 +145,9 @@ func UploadReport(server string, report string) error {
 	}
 	defer res.Body.Close()
 
-	if loadAndPrint(res.Body) != nil {
-		fmt.Println("Error uploading report")
+	if err := loadAndPrint(res.Body); err != nil {
+		fmt.Println("Error uploading report to server", err)
+		return err
 	} else {
 		fmt.Println("Report uploaded successfully")
 	}
@@ -152,7 +159,7 @@ func UploadReport(server string, report string) error {
 Fetch a vulnerability report from the server by index
 */
 func FetchReportByIndex(server string, index int) error {
-	url := fmt.Sprintf("%s/index/%d", server, index)
+	url := fmt.Sprintf("%s/api/v1/log/entries?logIndex=%d", server, index)
 
 	client := &http.Client{}
 	req, err := http.NewRequest("GET", url, nil)
@@ -178,10 +185,74 @@ func FetchReportByIndex(server string, index int) error {
 }
 
 /*
+Verify report by index
+*/
+func VerifyReportByIndex(server string, index int64) error {
+	url := fmt.Sprintf("%s/api/v1/log/entries?logIndex=%d", server, index)
+
+	client := &http.Client{}
+	req, err := http.NewRequest("GET", url, nil)
+	if err != nil {
+		fmt.Println(err)
+		return err
+	}
+	req.Header.Add("Content-Type", "application/json")
+
+	res, err := client.Do(req)
+	if err != nil {
+		fmt.Println(err)
+		return err
+	}
+
+	body, err := ioutil.ReadAll(res.Body)
+	if err != nil {
+		fmt.Println(err)
+		return err
+	}
+
+	var f RecordEntryResponse
+	err = json.Unmarshal(body, &f)
+	if err != nil {
+		fmt.Println(err)
+		return err
+	}
+
+	if f.Success {
+		// get report body
+		for _, record := range f.Data.Entry.Payload {
+			var signerBlob signature.SignerBlob
+			err = json.Unmarshal([]byte(record.Body), &signerBlob)
+			if err != nil {
+				fmt.Println(err)
+				return err
+			}
+
+			sig := signerBlob.Signature
+			publicKey := signerBlob.PublicKey
+
+			fmt.Printf("publicKey: %s\n", util.Red+base64.StdEncoding.EncodeToString(publicKey)+util.Reset)
+			fmt.Printf("signature: %s\n", util.Green+base64.StdEncoding.EncodeToString(sig)+util.Reset)
+
+			// calculate hash of the entire report & verify signature
+			if !signature.VerifyReportWithPublicKey(signerBlob.Report, publicKey, sig) {
+				return errors.New("Signature verification failed")
+			}
+
+			color.Green("✅Signature verification successful")
+		}
+	} else {
+		color.Red("❌Error fetching report")
+		return errors.New(f.Data.Error)
+	}
+
+	return nil
+}
+
+/*
 Fetch a vulnerability report from the server by record id
 */
 func FetchReportByRecord(server string, record string) error {
-	url := fmt.Sprintf("%s/record/%s", server, record)
+	url := fmt.Sprintf("%s/api/v1/log/entries?uuid=%s", server, record)
 
 	client := &http.Client{}
 	req, err := http.NewRequest("GET", url, nil)

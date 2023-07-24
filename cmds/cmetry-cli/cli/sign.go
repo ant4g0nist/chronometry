@@ -29,6 +29,7 @@ import (
 var (
 	targetFile string
 
+	showAuthor          bool
 	outputBlob          string
 	outputSignatureFile string
 
@@ -76,7 +77,7 @@ var (
 
 			fmt.Println("🔑Loaded public key: ", util.Red+base64.StdEncoding.EncodeToString(publicKey)+util.Reset)
 
-			signedBlob := signature.GenerateMessage(targetFile, publicKey, privateKey)
+			signedBlob := signature.GenerateMessage(targetFile, publicKey, privateKey, showAuthor)
 
 			// save signedBlob to file
 			if outputSignatureFile != "" {
@@ -92,6 +93,10 @@ var (
 )
 
 func init() {
+	// Anonymous flag for author. This flag checks if we should hash author's name or not.
+	// How can we have this as default true and then if the user specifies the flag, it will be false?
+	signCmd.Flags().BoolVarP(&showAuthor, "show-author", "a", false, "Show the author's name in the report. By default, the author's name is hashed and included in the signature")
+
 	signCmd.Flags().StringVarP(&targetFile, "reportFile", "f", "", "A vulnerability report file to calculate generate the signature for.")
 	signCmd.MarkFlagRequired("targetFile")
 
