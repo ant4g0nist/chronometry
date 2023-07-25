@@ -25,11 +25,16 @@ An append-only Log mode, analogous to the original Certificate Transparency logs
 
 ## Usage
 ### Installation
-#### Client
+#### Server
 ```sh
 $ git clone github.com/ant4g0nist/chronometry
 $ cd chronometry
-$ 
+$ brew install ipfs
+```
+
+#### Client
+```sh
+$ brew cask install ant4g0nist/chronometry
 ```
 
 ### Key Generation

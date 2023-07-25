@@ -15,6 +15,7 @@
 package trillian_client
 
 import (
+	"bytes"
 	"context"
 	"crypto/ed25519"
 	"encoding/base64"
@@ -33,6 +34,7 @@ import (
 	"github.com/google/trillian"
 	"github.com/google/trillian/client"
 	ttypes "github.com/google/trillian/types"
+	shell "github.com/ipfs/go-ipfs-api"
 	"github.com/mediocregopher/radix/v4"
 	"github.com/sigstore/rekor/pkg/generated/models"
 	"github.com/sigstore/rekor/pkg/sharding"
@@ -204,6 +206,17 @@ func CreateEntry(redis radix.Client, ctx context.Context, api *API, cfg *config.
 		Payload:  payload,
 		ETag:     uuid,
 		Location: cfg.ServerConfig.HTTPBind + "/api/v1/log/entries?uuid=" + entryID,
+	}
+
+	// replicate on IPFS
+	sh := shell.NewShell("localhost:5001")
+	cid, err := sh.Add(bytes.NewReader(logEntry.Bytes()))
+
+	logEntry.Cid = cid
+
+	if err != nil {
+		log.Logger.Error("Error in adding to IPFS", zap.Error(err))
+		return logEntry, err
 	}
 
 	return logEntry, nil

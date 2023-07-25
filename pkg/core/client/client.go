@@ -22,6 +22,9 @@ import (
 	"io"
 	"io/ioutil"
 	"net/http"
+	"os"
+	"path/filepath"
+	"strings"
 
 	"github.com/ant4g0nist/chronometry/pkg/core/signature"
 	"github.com/ant4g0nist/chronometry/pkg/util"
@@ -37,6 +40,12 @@ type Entry struct {
 	ETag     string            `json:"ETag"`
 	Location string            `json:"Location"`
 	Payload  map[string]Record `json:"Payload"`
+	Cid      string            `json:"cid"`
+}
+
+func (e *Entry) Bytes() []byte {
+	b, _ := json.Marshal(e)
+	return b
 }
 
 type Record struct {
@@ -95,8 +104,32 @@ func (r *RecordEntryResponse) PrettyPrint() {
 		fmt.Println("      RootHash:", record.Verification.InclusionProof.RootHash)
 		fmt.Println("      TreeSize:", record.Verification.InclusionProof.TreeSize)
 		fmt.Println("    SignedEntryTimestamp:", record.Verification.SignedEntryTimestamp)
+		fmt.Println("  IPFS Cid:", entry.Cid)
 		// Author
 	}
+}
+
+/*
+Save Entry to home directory on Client with logID as filename
+*/
+func SaveEntry(homedir string, entry Entry) error {
+	// save entry
+	for _, record := range entry.Payload {
+		// Chronometry home directory
+		if strings.HasPrefix(homedir, "~/") {
+			homedir = filepath.Join(os.Getenv("HOME"), homedir[2:])
+		}
+
+		filename := util.AbsPath(homedir, fmt.Sprintf("%d.poh", record.LogIndex))
+
+		err := ioutil.WriteFile(filename, entry.Bytes(), 0644)
+		if err != nil {
+			fmt.Println("Error saving entry to", err)
+			return err
+		}
+	}
+
+	return nil
 }
 
 /*
@@ -120,7 +153,7 @@ func CheckServerReachable(server string) bool {
 /*
 Upload a vulnerability report to the server
 */
-func UploadReport(server string, report string) error {
+func UploadReport(homedir string, server string, report string) error {
 	url := server + "/record"
 
 	// read report
@@ -145,7 +178,7 @@ func UploadReport(server string, report string) error {
 	}
 	defer res.Body.Close()
 
-	if err := loadAndPrint(res.Body); err != nil {
+	if err := loadAndPrint(res.Body, true, homedir); err != nil {
 		fmt.Println("Error uploading report to server", err)
 		return err
 	} else {
@@ -175,7 +208,7 @@ func FetchReportByIndex(server string, index int) error {
 		return err
 	}
 
-	if loadAndPrint(res.Body) != nil {
+	if loadAndPrint(res.Body, false, "") != nil {
 		fmt.Println("Error fetching report")
 	} else {
 		fmt.Println("Report fetched successfully")
@@ -268,7 +301,7 @@ func FetchReportByRecord(server string, record string) error {
 		return err
 	}
 
-	if loadAndPrint(res.Body) != nil {
+	if loadAndPrint(res.Body, false, "") != nil {
 		fmt.Println("Error fetching report")
 	} else {
 		fmt.Println("Report fetched successfully")
@@ -277,7 +310,7 @@ func FetchReportByRecord(server string, record string) error {
 	return nil
 }
 
-func loadAndPrint(bodyReader io.ReadCloser) error {
+func loadAndPrint(bodyReader io.ReadCloser, saveEntry bool, homedir string) error {
 	body, err := ioutil.ReadAll(bodyReader)
 	if err != nil {
 		fmt.Println(err)
@@ -294,6 +327,10 @@ func loadAndPrint(bodyReader io.ReadCloser) error {
 
 	if f.Success {
 		f.PrettyPrint()
+		if saveEntry {
+			fmt.Println("Saving entry to", homedir)
+			SaveEntry(homedir, f.Data.Entry)
+		}
 		return nil
 	} else {
 		return errors.New(f.Data.Error)

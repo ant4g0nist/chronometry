@@ -1,11 +1,11 @@
-version: 613
+version: 623
 
 author:
   name: John Doee
   email: john@doe.io
-  url: https://yokai.network/hacker/john-doe
+  url: https://yolo/hacker/john-doe
 
-platform: Yokai
+platform: Yolo
 
 title: Sample Vulnerability Report 2
 

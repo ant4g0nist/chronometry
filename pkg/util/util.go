@@ -71,6 +71,7 @@ func AbsPath(dir string, path string) string {
 		return filepath.Clean(string(path))
 	} else if strings.HasPrefix(path, "~/") {
 		dirname, _ := os.UserHomeDir()
+
 		return filepath.Join(dirname, path[2:])
 	}
 
