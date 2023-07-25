@@ -672,3 +672,57 @@
 {"level":"DEBUG","time":"2023-07-24T16:35:31.611+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":7579013027887097570}
 {"level":"DEBUG","time":"2023-07-24T16:35:49.363+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":7579013027887097570}
 {"level":"DEBUG","time":"2023-07-24T16:43:42.588+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":7579013027887097570}
+{"level":"INFO","time":"2023-07-24T16:49:51.254+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T16:49:51.256+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T16:49:51.284+0200","message":"Starting Chronometry server with active tree 8640822432477660806"}
+{"level":"DEBUG","time":"2023-07-24T16:50:47.222+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:50:49.094+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"INFO","time":"2023-07-24T16:51:00.257+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T16:51:00.258+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T16:51:00.260+0200","message":"Starting Chronometry server with active tree 8640822432477660806"}
+{"level":"DEBUG","time":"2023-07-24T16:51:07.164+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:54:17.961+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:55:32.733+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:55:48.814+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:56:02.065+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:56:15.117+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:58:14.702+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:58:16.187+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:59:52.905+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:59:55.977+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T17:00:10.056+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T17:00:22.213+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T17:01:10.327+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"INFO","time":"2023-07-25T10:20:27.541+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T10:20:27.542+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-25T10:20:27.542+0200","message":"Starting Chronometry server with active tree 8640822432477660806"}
+{"level":"DEBUG","time":"2023-07-25T10:30:38.828+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"INFO","time":"2023-07-25T10:31:16.088+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T10:31:16.089+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-25T10:31:16.133+0200","message":"Starting Chronometry server with active tree 6944128401157164942"}
+{"level":"DEBUG","time":"2023-07-25T10:31:20.258+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":6944128401157164942}
+{"level":"DEBUG","time":"2023-07-25T10:35:50.818+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":6944128401157164942}
+{"level":"DEBUG","time":"2023-07-25T10:35:52.214+0200","message":"Retrieving resolved index","resolvedIndex":3,"treeID":6944128401157164942}
+{"level":"DEBUG","time":"2023-07-25T10:37:33.081+0200","message":"Retrieving resolved index","resolvedIndex":4,"treeID":6944128401157164942}
+{"level":"DEBUG","time":"2023-07-25T10:37:35.313+0200","message":"Retrieving resolved index","resolvedIndex":5,"treeID":6944128401157164942}
+{"level":"DEBUG","time":"2023-07-25T10:37:36.608+0200","message":"Retrieving resolved index","resolvedIndex":6,"treeID":6944128401157164942}
+{"level":"INFO","time":"2023-07-25T11:19:45.809+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T11:19:45.811+0200","message":"Attempting to create a new tree"}
+{"level":"ERROR","time":"2023-07-25T11:19:45.811+0200","message":"Create and init tree","error":"create tree: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:8090: connect: connection refused\""}
+{"level":"INFO","time":"2023-07-25T11:19:49.162+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T11:19:49.164+0200","message":"Attempting to create a new tree"}
+{"level":"ERROR","time":"2023-07-25T11:19:49.165+0200","message":"Create and init tree","error":"create tree: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:8090: connect: connection refused\""}
+{"level":"INFO","time":"2023-07-25T11:19:55.189+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T11:19:55.191+0200","message":"Attempting to create a new tree"}
+{"level":"ERROR","time":"2023-07-25T11:19:55.192+0200","message":"Create and init tree","error":"create tree: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:8090: connect: connection refused\""}
+{"level":"INFO","time":"2023-07-25T11:20:00.165+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T11:20:00.167+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-25T11:20:00.255+0200","message":"Starting Chronometry server with active tree 3616851979829606029"}
+{"level":"INFO","time":"2023-07-25T12:00:49.277+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T12:00:49.279+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-25T12:00:49.280+0200","message":"Starting Chronometry server with active tree 3616851979829606029"}
+{"level":"DEBUG","time":"2023-07-25T12:00:59.947+0200","message":"Retrieving resolved index","resolvedIndex":6,"treeID":3616851979829606029}
+{"level":"INFO","time":"2023-07-25T16:49:05.224+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T16:49:05.225+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-25T16:49:05.227+0200","message":"Starting Chronometry server with active tree 3616851979829606029"}
+{"level":"DEBUG","time":"2023-07-25T16:49:26.526+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":3616851979829606029}

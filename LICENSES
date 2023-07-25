@@ -1,0 +1,6 @@
+## Thanks 
+This project is heavily inspired by [SigStore](https://sigstore.dev/), [Trillian](https://github.com/google/trillian).
+
+## Licenses
+- [Rekor](https://github.com/sigstore/rekor/blob/main/LICENSE)
+- [SigStore](https://github.com/sigstore/rekor-search-ui/blob/main/LICENSE)

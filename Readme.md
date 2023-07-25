@@ -3,6 +3,8 @@
 
 "Proof of Hack" refer to the evidence or demonstration that a hacker has successfully exploited a vulnerability in a system or application. This proof is used to verify the authenticity of the vulnerability report.
 
+<img src="resources/imgs/screen-1.png"  height=1200 width=1200 />
+
 Hackers usually tweet hashes as a means of sharing the details of a specific exploit or vulnerability with other members of the hacking community. The hash is a unique representation of a Proof-of-Concept file or a vulnerability report submitted to platforms like HackerOne/Yokai/ZDI, and can be used to confirm the authenticity of the data or to check if it has been tampered with. 
 
 By generating a hash of the report before it is submitted and recording it on [Chronometry](chronometry.io), a Hacker can create a unique and verifiable fingerprint of the report that can be used to confirm its authenticity at a later time. This can be useful for resolving disputes or for providing proof of discovery in cases where multiple parties claim to have reported the same vulnerability.
@@ -20,7 +22,6 @@ Chronometry uses [Trillian](https://github.com/google/trillian)
 Trillian implements a Merkle tree whose contents are served from a data storage layer, to allow scalability to extremely large trees. On top of this Merkle tree, Trillian provides the following:
 
 An append-only Log mode, analogous to the original Certificate Transparency logs. In this mode, the Merkle tree is effectively filled up from the left, giving a dense Merkle tree.
-
 
 ## Usage
 ### Installation
@@ -188,6 +189,3 @@ Report uploaded successfully
 ---
 - Author: [ant4g0nist](https://twitter.com/ant4g0nist)
 
-
-## Contributions
-- SigStore

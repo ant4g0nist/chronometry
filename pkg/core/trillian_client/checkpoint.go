@@ -199,8 +199,6 @@ func CreateAndSignCheckpoint(cfg *config.CMConfig, ctx context.Context, hostname
 		return nil, fmt.Errorf("error marshalling checkpoint: %v", err)
 	}
 
-	fmt.Println("scBytes: ", string(scBytes))
-
 	return scBytes, nil
 }
 
