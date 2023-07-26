@@ -59,8 +59,8 @@ func init() {
 	fetchByRecordCmd.Flags().StringVarP(&recordID, "record", "r", "", "The record ID of the vulnerability report to fetch.")
 	fetchByRecordCmd.MarkFlagRequired("record")
 
-	fetchByIndexCmd.Flags().StringVarP(&chronometryServer, "server", "s", "https://chronometry.io", "The Chronometry server to use.")
-	fetchByRecordCmd.Flags().StringVarP(&chronometryServer, "server", "s", "https://chronometry.io", "The Chronometry server to use.")
+	fetchByIndexCmd.Flags().StringVarP(&chronometryServer, "server", "s", "https://api.chronometry.io", "The Chronometry server to use.")
+	fetchByRecordCmd.Flags().StringVarP(&chronometryServer, "server", "s", "https://api.chronometry.io", "The Chronometry server to use.")
 
 	fetchCmd.AddCommand(fetchByIndexCmd, fetchByRecordCmd)
 	rootCmd.AddCommand(fetchCmd)
