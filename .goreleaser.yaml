@@ -48,7 +48,7 @@ archives:
     # Additional files/globs we want to add to the archive.
     files:
       - LICENSE
-      - configs/cmetry-server.yaml
+      - config/cmetry-server.yaml
       - env.example
       - docker-compose.yaml
 
