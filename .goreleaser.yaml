@@ -20,7 +20,7 @@ builds:
     binary: cmetry-server
 
   - id: client
-    main: ./cmd/cmetry-cli/main.go
+    main: ./cmds/cmetry-cli/main.go
     ldflags: "-s -w"
     goos:
       - linux
