@@ -1,5 +1,5 @@
 # Chronometry
-[Chronometry](chronometry.io) is a tamper-proof platform for hackers and bug bounty hunters to record & keep track of Proof-of-Hacks (PoH). The word Chronometry refers to the science of accurate time measurement.
+[Chronometry](https://chronometry.io) is a tamper-proof platform for hackers and bug bounty hunters to record & keep track of Proof-of-Hacks (PoH). The word Chronometry refers to the science of accurate time measurement.
 
 "Proof of Hack" refer to the evidence or demonstration that a hacker has successfully exploited a vulnerability in a system or application. This proof is used to verify the authenticity of the vulnerability report.
 
