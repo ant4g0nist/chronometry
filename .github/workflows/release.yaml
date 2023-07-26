@@ -42,13 +42,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Your GoReleaser Pro key, if you are using the 'goreleaser-pro' distribution
           # GORELEASER_KEY: ${{ secrets.GORELEASER_KEY }}
-
-      - 
-        name: Deploy to ocean
-        run: |
-          ssh root@${{ secrets.SERVER_IP }} pkill -f spektra || true
-          scp dist/spektra_Linux_x86_64.tar.gz root@${{ secrets.SERVER_IP }}:/home/dev/spektra_Linux_x86_64.tar.gz
-          ssh root@${{ secrets.SERVER_IP }} "cd /home/dev/ && tar -xvf /home/dev/spektra_Linux_x86_64.tar.gz; rm -rf /home/dev/spektra; mv /home/dev/spektra_Linux_x86_64 /home/dev/spektra; cd /home/dev/spektra && docker compose down"
-          ssh root@${{ secrets.SERVER_IP }} "cd /home/dev/spektra && cp env.example .env && docker compose up postgres -d"
-          ssh root@${{ secrets.SERVER_IP }} "cd /home/dev/spektra && ./server keys generate --output ./.keys"
-          ssh root@${{ secrets.SERVER_IP }} "cd /home/dev/spektra && screen -S backup -d -m ./server serve --config /home/dev/spektra/configs/homeserver.yaml"
