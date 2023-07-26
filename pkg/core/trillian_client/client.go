@@ -205,7 +205,7 @@ func CreateEntry(redis radix.Client, ctx context.Context, api *API, cfg *config.
 	logEntry = cclient.Entry{
 		Payload:  payload,
 		ETag:     uuid,
-		Location: cfg.ServerConfig.HTTPBind + "/api/v1/log/entries?uuid=" + entryID,
+		Location: cfg.ServerConfig.Hostname + "?uuid=" + entryID,
 	}
 
 	// replicate on IPFS

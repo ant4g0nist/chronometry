@@ -1,7 +1,7 @@
 version: 1
 
 server:
-  hostname: localhost
+  hostname: localhost:3000
   http_bind: localhost:8008
 
 
