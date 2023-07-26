@@ -50,7 +50,7 @@ archives:
       - LICENSE
       - config/cmetry-server.yaml
       - env.example
-      - docker-compose.yaml
+      - docker-compose.yml
 
     # use zip for windows archives
     format_overrides:
