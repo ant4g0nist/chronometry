@@ -30,6 +30,11 @@ An append-only Log mode, analogous to the original Certificate Transparency logs
 ❯ brew install cmetry
 ```
 
+### Upgrading
+```sh
+❯ brew update && brew upgrade ant4g0nist/tap/cmetry
+```
+
 ### Key Generation
 Generate a new Chronometry key pair:
 
