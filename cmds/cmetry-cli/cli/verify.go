@@ -63,7 +63,7 @@ func init() {
 
 	// index of the report
 	verifyCmd.Flags().IntVarP(&index, "index", "i", -1, "Index of the report to verify")
-	verifyCmd.Flags().StringVarP(&chronometryServer, "server", "s", "https://chronometry.ant4g0nist.com", "The Chronometry server to use.")
+	verifyCmd.Flags().StringVarP(&chronometryServer, "server", "s", "https://chronometry.io", "The Chronometry server to use.")
 
 	rootCmd.AddCommand(verifyCmd)
 }

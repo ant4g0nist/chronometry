@@ -63,5 +63,5 @@ func init() {
 
 	recordCmd.PersistentFlags().StringVar(&keys_folder, "input", "~/.chronometry", "The folder to search the public and private key files.")
 
-	recordCmd.Flags().StringVarP(&chronometryServer, "server", "s", "https://chronometry.ant4g0nist.com", "The Chronometry server to use.")
+	recordCmd.Flags().StringVarP(&chronometryServer, "server", "s", "https://chronometry.io", "The Chronometry server to use.")
 }
