@@ -1,0 +1,753 @@
+{"level":"INFO","time":"2023-06-25T19:58:08.428+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-06-25T19:58:08.429+0200","message":"Attempting to create a new tree"}
+{"level":"ERROR","time":"2023-06-25T19:58:08.430+0200","message":"Create and init tree","error":"create tree: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:8090: connect: connection refused\""}
+{"level":"INFO","time":"2023-06-25T20:01:51.074+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-06-25T20:01:51.075+0200","message":"Attempting to create a new tree"}
+{"level":"ERROR","time":"2023-06-25T20:01:51.075+0200","message":"Create and init tree","error":"create tree: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:8090: connect: connection refused\""}
+{"level":"INFO","time":"2023-06-25T20:02:01.570+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-06-25T20:02:01.570+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-06-25T20:02:01.617+0200","message":"Starting Chronometry server with active tree 3724554279853730273"}
+{"level":"INFO","time":"2023-06-25T20:02:04.675+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-06-25T20:02:04.676+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-06-25T20:02:04.696+0200","message":"Starting Chronometry server with active tree 6447880429056439580"}
+{"level":"INFO","time":"2023-06-25T20:02:10.819+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-06-25T20:02:10.820+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-06-25T20:02:10.863+0200","message":"Starting Chronometry server with active tree 2364713430458760537"}
+{"level":"INFO","time":"2023-06-25T20:04:24.976+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-06-25T20:04:24.977+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-06-25T20:04:25.008+0200","message":"Starting Chronometry server with active tree 3404383798022634577"}
+{"level":"INFO","time":"2023-06-25T20:04:27.157+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-06-25T20:04:27.158+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-06-25T20:04:27.209+0200","message":"Starting Chronometry server with active tree 2396107341808914573"}
+{"level":"INFO","time":"2023-06-25T20:04:43.838+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-06-25T20:04:43.839+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-06-25T20:04:43.839+0200","message":"Starting Chronometry server with active tree 2364713430458760537"}
+{"level":"INFO","time":"2023-07-09T09:37:01.939+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T09:37:01.941+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T09:37:02.014+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T09:37:09.169+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T09:37:09.170+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T09:37:09.201+0200","message":"Starting Chronometry server with active tree 5258446444693383847"}
+{"level":"INFO","time":"2023-07-09T09:37:37.394+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T09:37:37.395+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T09:37:37.395+0200","message":"Starting Chronometry server with active tree 2364713430458760537"}
+{"level":"INFO","time":"2023-07-09T09:37:39.788+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T09:37:39.789+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T09:37:39.789+0200","message":"Starting Chronometry server with active tree 2364713430458760537"}
+{"level":"INFO","time":"2023-07-09T09:38:36.664+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T09:38:36.664+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T09:38:36.664+0200","message":"Starting Chronometry server with active tree 2364713430458760537"}
+{"level":"INFO","time":"2023-07-09T09:39:38.150+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T09:39:38.151+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T09:39:38.151+0200","message":"Starting Chronometry server with active tree 2364713430458760537"}
+{"level":"INFO","time":"2023-07-09T09:39:48.510+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T09:39:48.511+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T09:39:48.511+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T09:40:40.282+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T09:40:40.283+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T09:40:40.283+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T09:40:52.667+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T09:40:52.668+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T09:40:52.668+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T09:41:08.623+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T09:41:08.624+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T09:41:08.624+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T10:00:01.929+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T10:00:01.930+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T10:00:01.930+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T10:01:01.105+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T10:01:01.106+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T10:01:01.106+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T10:01:49.751+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T10:01:49.752+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T10:01:49.752+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T10:02:25.861+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T10:02:25.862+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T10:02:25.862+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T16:03:17.152+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T16:03:17.153+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T16:03:17.153+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T16:05:34.032+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T16:05:34.033+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T16:05:34.033+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T16:06:58.280+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T16:06:58.280+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T16:06:58.280+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T16:10:09.480+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T16:10:09.481+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T16:10:09.481+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T16:11:39.156+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T16:11:39.157+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T16:11:39.157+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T16:12:32.727+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T16:12:32.729+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T16:12:32.729+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T16:13:33.817+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T16:13:33.819+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T16:13:33.819+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T16:13:47.330+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T16:13:47.331+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T16:13:47.331+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T16:14:09.457+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T16:14:09.458+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T16:14:09.459+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T16:14:45.047+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T16:14:45.048+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T16:14:45.048+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T16:15:04.773+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T16:15:04.774+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T16:15:04.774+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-09T16:15:24.879+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-09T16:15:24.880+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-09T16:15:24.880+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-10T08:12:07.677+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-10T08:12:07.679+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-10T08:12:07.679+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-10T08:30:51.983+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-10T08:30:51.984+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-10T08:30:51.984+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-10T08:31:29.535+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-10T08:31:29.536+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-10T08:31:29.536+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-10T08:32:11.166+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-10T08:32:11.167+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-10T08:32:11.167+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-10T08:32:44.613+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-10T08:32:44.614+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-10T08:32:44.614+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-10T08:34:08.187+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-10T08:34:08.188+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-10T08:34:08.188+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-20T19:53:57.650+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-20T19:53:57.651+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-20T19:53:57.651+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-20T19:56:06.505+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-20T19:56:06.506+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-20T19:56:06.506+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-20T19:57:42.714+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-20T19:57:42.715+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-20T19:57:42.715+0200","message":"Starting Chronometry server with active tree 7682498616596893550"}
+{"level":"INFO","time":"2023-07-20T19:58:09.537+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-20T19:58:09.538+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-20T19:58:09.607+0200","message":"Starting Chronometry server with active tree 6154096183676422048"}
+{"level":"INFO","time":"2023-07-20T20:05:52.573+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-20T20:05:52.574+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-20T20:05:52.574+0200","message":"Starting Chronometry server with active tree 6154096183676422048"}
+{"level":"INFO","time":"2023-07-20T20:06:18.072+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-20T20:06:18.072+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-20T20:06:18.072+0200","message":"Starting Chronometry server with active tree 6154096183676422048"}
+{"level":"INFO","time":"2023-07-21T06:11:12.679+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-21T06:11:12.680+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-21T06:11:12.680+0200","message":"Starting Chronometry server with active tree 6154096183676422048"}
+{"level":"INFO","time":"2023-07-22T16:46:06.018+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-22T16:46:06.019+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-22T16:46:06.019+0200","message":"Starting Chronometry server with active tree 6154096183676422048"}
+{"level":"INFO","time":"2023-07-22T19:45:29.564+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-22T19:45:29.565+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-22T19:45:29.565+0200","message":"Starting Chronometry server with active tree 6154096183676422048"}
+{"level":"INFO","time":"2023-07-22T19:48:13.836+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-22T19:48:13.837+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-22T19:48:13.837+0200","message":"Starting Chronometry server with active tree 6154096183676422048"}
+{"level":"INFO","time":"2023-07-22T19:57:20.538+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-22T19:57:20.539+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-22T19:57:20.617+0200","message":"Starting Chronometry server with active tree 4867591679852885798"}
+{"level":"INFO","time":"2023-07-22T20:00:04.878+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-22T20:00:04.879+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-22T20:00:04.927+0200","message":"Starting Chronometry server with active tree 7170145625678094179"}
+{"level":"INFO","time":"2023-07-22T20:01:42.375+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-22T20:01:42.376+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-22T20:01:42.412+0200","message":"Starting Chronometry server with active tree 8271279503004848986"}
+{"level":"INFO","time":"2023-07-22T21:18:15.589+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-22T21:18:15.590+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-22T21:18:15.673+0200","message":"Starting Chronometry server with active tree 9159053811626556544"}
+{"level":"INFO","time":"2023-07-22T21:27:57.365+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-22T21:27:57.367+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-22T21:27:57.406+0200","message":"Starting Chronometry server with active tree 7675370684155243334"}
+{"level":"INFO","time":"2023-07-22T21:45:32.695+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-22T21:45:32.696+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-22T21:45:32.732+0200","message":"Starting Chronometry server with active tree 4615702994059950587"}
+{"level":"INFO","time":"2023-07-22T21:52:31.247+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-22T21:52:31.248+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-22T21:52:31.273+0200","message":"Starting Chronometry server with active tree 7443896423705097399"}
+{"level":"INFO","time":"2023-07-23T02:39:36.803+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T02:39:36.804+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T02:39:36.847+0200","message":"Starting Chronometry server with active tree 6209053188379054912"}
+{"level":"INFO","time":"2023-07-23T02:41:09.220+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T02:41:09.221+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T02:41:09.247+0200","message":"Starting Chronometry server with active tree 7216156158618550996"}
+{"level":"INFO","time":"2023-07-23T02:41:50.490+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T02:41:50.490+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T02:41:50.525+0200","message":"Starting Chronometry server with active tree 1632367274744745342"}
+{"level":"INFO","time":"2023-07-23T09:56:09.719+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T09:56:09.720+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T09:56:09.755+0200","message":"Starting Chronometry server with active tree 9144144907866804610"}
+{"level":"INFO","time":"2023-07-23T10:10:35.689+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:10:35.690+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:10:35.707+0200","message":"Starting Chronometry server with active tree 7584963263170473646"}
+{"level":"INFO","time":"2023-07-23T10:11:38.299+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:11:38.299+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:11:38.324+0200","message":"Starting Chronometry server with active tree 7495307588742793493"}
+{"level":"INFO","time":"2023-07-23T10:11:50.984+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:11:50.984+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:11:51.030+0200","message":"Starting Chronometry server with active tree 7198444342512761995"}
+{"level":"ERROR","time":"2023-07-23T10:11:51.033+0200","message":"Error starting server","error":"failed to listen: listen tcp4 127.0.0.1:8008: bind: address already in use"}
+{"level":"INFO","time":"2023-07-23T10:13:31.036+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:13:31.036+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:13:31.054+0200","message":"Starting Chronometry server with active tree 4990533546746064768"}
+{"level":"INFO","time":"2023-07-23T10:14:00.962+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:14:00.963+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:14:00.994+0200","message":"Starting Chronometry server with active tree 852455205986568029"}
+{"level":"INFO","time":"2023-07-23T10:20:47.944+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:20:47.945+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:20:47.979+0200","message":"Starting Chronometry server with active tree 2809949331349497454"}
+{"level":"INFO","time":"2023-07-23T10:24:02.376+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:24:02.377+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:24:02.399+0200","message":"Starting Chronometry server with active tree 5973211877997066332"}
+{"level":"INFO","time":"2023-07-23T10:24:33.789+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:24:33.790+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:24:33.826+0200","message":"Starting Chronometry server with active tree 4578669955348226674"}
+{"level":"INFO","time":"2023-07-23T10:24:47.874+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:24:47.875+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:24:47.913+0200","message":"Starting Chronometry server with active tree 5874469114754822468"}
+{"level":"INFO","time":"2023-07-23T10:24:57.592+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:24:57.594+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:24:57.619+0200","message":"Starting Chronometry server with active tree 8171248828751117661"}
+{"level":"INFO","time":"2023-07-23T10:25:11.879+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:25:11.879+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:25:11.897+0200","message":"Starting Chronometry server with active tree 1214154201478813085"}
+{"level":"INFO","time":"2023-07-23T10:25:56.407+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:25:56.408+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:25:56.428+0200","message":"Starting Chronometry server with active tree 5966836420161701117"}
+{"level":"INFO","time":"2023-07-23T10:26:40.662+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:26:40.663+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:26:40.691+0200","message":"Starting Chronometry server with active tree 456614868041592587"}
+{"level":"INFO","time":"2023-07-23T10:28:18.963+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:28:18.964+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:28:18.992+0200","message":"Starting Chronometry server with active tree 5907960732585944596"}
+{"level":"INFO","time":"2023-07-23T10:28:35.654+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:28:35.654+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:28:35.671+0200","message":"Starting Chronometry server with active tree 8611942248279957759"}
+{"level":"INFO","time":"2023-07-23T10:29:54.785+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:29:54.785+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:29:54.807+0200","message":"Starting Chronometry server with active tree 1023250043246741307"}
+{"level":"INFO","time":"2023-07-23T10:31:59.736+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:31:59.737+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:31:59.773+0200","message":"Starting Chronometry server with active tree 5010452164420719832"}
+{"level":"INFO","time":"2023-07-23T10:32:21.280+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:32:21.281+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:32:21.317+0200","message":"Starting Chronometry server with active tree 6262623985268041806"}
+{"level":"INFO","time":"2023-07-23T10:41:30.688+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:41:30.689+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:41:30.703+0200","message":"Starting Chronometry server with active tree 6402709615572638273"}
+{"level":"INFO","time":"2023-07-23T10:42:08.500+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:42:08.500+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:42:08.535+0200","message":"Starting Chronometry server with active tree 2918019476091078568"}
+{"level":"INFO","time":"2023-07-23T10:43:27.662+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:43:27.664+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:43:27.688+0200","message":"Starting Chronometry server with active tree 1232174964250466216"}
+{"level":"INFO","time":"2023-07-23T10:46:06.534+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:46:06.535+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:46:06.562+0200","message":"Starting Chronometry server with active tree 7719658592429745861"}
+{"level":"INFO","time":"2023-07-23T10:56:27.444+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:56:27.446+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:56:27.469+0200","message":"Starting Chronometry server with active tree 7671416977325639341"}
+{"level":"INFO","time":"2023-07-23T10:56:48.277+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:56:48.277+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:56:48.304+0200","message":"Starting Chronometry server with active tree 2339505868281085180"}
+{"level":"INFO","time":"2023-07-23T10:57:37.270+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T10:57:37.272+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T10:57:37.291+0200","message":"Starting Chronometry server with active tree 6478426383509045364"}
+{"level":"INFO","time":"2023-07-23T11:01:40.802+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T11:01:40.803+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T11:01:40.834+0200","message":"Starting Chronometry server with active tree 5962617325438811549"}
+{"level":"INFO","time":"2023-07-23T11:22:01.462+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T11:22:01.463+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T11:22:01.490+0200","message":"Starting Chronometry server with active tree 5955530761286563397"}
+{"level":"INFO","time":"2023-07-23T11:23:56.023+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T11:23:56.024+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T11:23:56.046+0200","message":"Starting Chronometry server with active tree 4120797154378102982"}
+{"level":"INFO","time":"2023-07-23T12:08:25.528+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T12:08:25.529+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T12:08:25.548+0200","message":"Starting Chronometry server with active tree 7210987933614430740"}
+{"level":"INFO","time":"2023-07-23T12:08:57.162+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T12:08:57.164+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T12:08:57.185+0200","message":"Starting Chronometry server with active tree 7852916011811181522"}
+{"level":"INFO","time":"2023-07-23T12:09:20.933+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T12:09:20.935+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T12:09:20.958+0200","message":"Starting Chronometry server with active tree 6293997103902192888"}
+{"level":"DEBUG","time":"2023-07-23T12:09:36.533+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"e7222c2a677fbb452c0b9bddbabd56e5b39130b06e2f8f70dc2179c1086ffb24","treeID":6293997103902192888}
+{"level":"DEBUG","time":"2023-07-23T12:09:39.513+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"e7222c2a677fbb452c0b9bddbabd56e5b39130b06e2f8f70dc2179c1086ffb24","treeID":6293997103902192888}
+{"level":"DEBUG","time":"2023-07-23T12:09:40.175+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"e7222c2a677fbb452c0b9bddbabd56e5b39130b06e2f8f70dc2179c1086ffb24","treeID":6293997103902192888}
+{"level":"DEBUG","time":"2023-07-23T12:09:40.520+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"e7222c2a677fbb452c0b9bddbabd56e5b39130b06e2f8f70dc2179c1086ffb24","treeID":6293997103902192888}
+{"level":"DEBUG","time":"2023-07-23T12:09:40.796+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"e7222c2a677fbb452c0b9bddbabd56e5b39130b06e2f8f70dc2179c1086ffb24","treeID":6293997103902192888}
+{"level":"DEBUG","time":"2023-07-23T12:09:41.065+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"e7222c2a677fbb452c0b9bddbabd56e5b39130b06e2f8f70dc2179c1086ffb24","treeID":6293997103902192888}
+{"level":"DEBUG","time":"2023-07-23T12:09:41.348+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"e7222c2a677fbb452c0b9bddbabd56e5b39130b06e2f8f70dc2179c1086ffb24","treeID":6293997103902192888}
+{"level":"DEBUG","time":"2023-07-23T12:09:42.302+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"e7222c2a677fbb452c0b9bddbabd56e5b39130b06e2f8f70dc2179c1086ffb24","treeID":6293997103902192888}
+{"level":"DEBUG","time":"2023-07-23T12:09:47.662+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"e7222c2a677fbb452c0b9bddbabd56e5b39130b06e2f8f70dc2179c1086ffb24","treeID":6293997103902192888}
+{"level":"DEBUG","time":"2023-07-23T12:10:14.044+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"8e9a1778322c3a9968a1e08d404c414b01dfb6664f0e3f19bf000f0434d7a4b2","treeID":6293997103902192888}
+{"level":"INFO","time":"2023-07-23T12:20:40.367+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T12:20:40.368+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T12:20:40.392+0200","message":"Starting Chronometry server with active tree 3024226067763747503"}
+{"level":"DEBUG","time":"2023-07-23T12:20:42.581+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"8e9a1778322c3a9968a1e08d404c414b01dfb6664f0e3f19bf000f0434d7a4b2","treeID":6293997103902192888}
+{"level":"DEBUG","time":"2023-07-23T12:20:44.135+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"8e9a1778322c3a9968a1e08d404c414b01dfb6664f0e3f19bf000f0434d7a4b2","treeID":6293997103902192888}
+{"level":"DEBUG","time":"2023-07-23T12:20:47.289+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"8e9a1778322c3a9968a1e08d404c414b01dfb6664f0e3f19bf000f0434d7a4b2","treeID":6293997103902192888}
+{"level":"DEBUG","time":"2023-07-23T12:21:05.824+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":0}
+{"level":"DEBUG","time":"2023-07-23T12:21:07.827+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":0}
+{"level":"DEBUG","time":"2023-07-23T12:21:13.471+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":0}
+{"level":"DEBUG","time":"2023-07-23T12:21:15.843+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":0}
+{"level":"DEBUG","time":"2023-07-23T12:21:27.267+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":0}
+{"level":"INFO","time":"2023-07-23T12:22:11.050+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T12:22:11.051+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T12:22:11.069+0200","message":"Starting Chronometry server with active tree 3546117107599409367"}
+{"level":"DEBUG","time":"2023-07-23T12:22:12.868+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":0}
+{"level":"DEBUG","time":"2023-07-23T12:22:18.913+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":0}
+{"level":"DEBUG","time":"2023-07-23T12:22:20.706+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":0}
+{"level":"DEBUG","time":"2023-07-23T12:22:21.895+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":0}
+{"level":"INFO","time":"2023-07-23T12:24:22.549+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T12:24:22.551+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T12:24:22.570+0200","message":"Starting Chronometry server with active tree 3420436521733366289"}
+{"level":"INFO","time":"2023-07-23T12:24:27.452+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T12:24:27.453+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T12:24:27.471+0200","message":"Starting Chronometry server with active tree 4529387650709796119"}
+{"level":"ERROR","time":"2023-07-23T12:24:27.472+0200","message":"Error starting server","error":"failed to listen: listen tcp4 127.0.0.1:8008: bind: address already in use"}
+{"level":"DEBUG","time":"2023-07-23T12:24:30.171+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":3420436521733366289}
+{"level":"DEBUG","time":"2023-07-23T12:24:32.837+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":3420436521733366289}
+{"level":"DEBUG","time":"2023-07-23T12:24:47.136+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":3420436521733366289}
+{"level":"INFO","time":"2023-07-23T12:25:17.742+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T12:25:17.744+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T12:25:17.778+0200","message":"Starting Chronometry server with active tree 2883697741178701530"}
+{"level":"DEBUG","time":"2023-07-23T12:25:28.311+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"e7222c2a677fbb452c0b9bddbabd56e5b39130b06e2f8f70dc2179c1086ffb24","treeID":2883697741178701530}
+{"level":"DEBUG","time":"2023-07-23T12:25:37.076+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2883697741178701530}
+{"level":"INFO","time":"2023-07-23T12:30:33.226+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T12:30:33.228+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T12:30:33.253+0200","message":"Starting Chronometry server with active tree 7087315804185952030"}
+{"level":"DEBUG","time":"2023-07-23T12:32:48.612+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":7087315804185952030}
+{"level":"DEBUG","time":"2023-07-23T12:32:49.561+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":7087315804185952030}
+{"level":"DEBUG","time":"2023-07-23T12:32:50.370+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":7087315804185952030}
+{"level":"DEBUG","time":"2023-07-23T12:32:51.647+0200","message":"Retrieving resolved index","resolvedIndex":100,"treeID":7087315804185952030}
+{"level":"DEBUG","time":"2023-07-23T12:32:53.440+0200","message":"Retrieving resolved index","resolvedIndex":99,"treeID":7087315804185952030}
+{"level":"DEBUG","time":"2023-07-23T12:32:54.614+0200","message":"Retrieving resolved index","resolvedIndex":92,"treeID":7087315804185952030}
+{"level":"DEBUG","time":"2023-07-23T12:32:55.550+0200","message":"Retrieving resolved index","resolvedIndex":91,"treeID":7087315804185952030}
+{"level":"DEBUG","time":"2023-07-23T12:53:37.637+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":7087315804185952030}
+{"level":"DEBUG","time":"2023-07-23T12:53:52.490+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":7087315804185952030}
+{"level":"DEBUG","time":"2023-07-23T12:54:02.674+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":7087315804185952030}
+{"level":"DEBUG","time":"2023-07-23T12:54:07.288+0200","message":"Retrieving resolved index","resolvedIndex":99,"treeID":7087315804185952030}
+{"level":"DEBUG","time":"2023-07-23T12:55:28.922+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"d1839c29cfb78b9c3646c025e53db7b4331b97a2814d2af9687f40127f19cea6","treeID":7087315804185952030}
+{"level":"DEBUG","time":"2023-07-23T12:55:31.384+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"d1839c29cfb78b9c3646c025e53db7b4331b97a2814d2af9687f40127f19cea6","treeID":7087315804185952030}
+{"level":"INFO","time":"2023-07-23T12:56:34.564+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T12:56:34.566+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T12:56:34.582+0200","message":"Starting Chronometry server with active tree 3493417991693629765"}
+{"level":"DEBUG","time":"2023-07-23T12:57:19.140+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"d1839c29cfb78b9c3646c025e53db7b4331b97a2814d2af9687f40127f19cea6","treeID":3493417991693629765}
+{"level":"DEBUG","time":"2023-07-23T12:57:35.510+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":3493417991693629765}
+{"level":"INFO","time":"2023-07-23T13:11:29.141+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T13:11:29.143+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T13:11:29.157+0200","message":"Starting Chronometry server with active tree 3836459611394879076"}
+{"level":"DEBUG","time":"2023-07-23T13:12:22.418+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":3836459611394879076}
+{"level":"INFO","time":"2023-07-23T13:13:04.823+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T13:13:04.825+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T13:13:04.844+0200","message":"Starting Chronometry server with active tree 2093642982410496199"}
+{"level":"DEBUG","time":"2023-07-23T13:13:24.944+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:23:09.081+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:23:38.941+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:27:11.654+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:27:48.483+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:32:01.547+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:32:15.939+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:32:36.746+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:36:32.631+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:41:08.127+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:41:44.534+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:41:44.541+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:41:44.547+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:41:48.205+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:42:07.200+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:42:07.206+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:42:07.210+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:42:10.810+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:42:10.815+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:42:10.820+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:42:15.071+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:42:52.837+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:43:17.214+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:43:54.201+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"DEBUG","time":"2023-07-23T13:44:47.804+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2093642982410496199}
+{"level":"INFO","time":"2023-07-23T14:18:47.756+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T14:18:47.756+0200","message":"Attempting to create a new tree"}
+{"level":"ERROR","time":"2023-07-23T14:18:47.758+0200","message":"Create and init tree","error":"create tree: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:8090: connect: connection refused\""}
+{"level":"INFO","time":"2023-07-23T14:18:49.649+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T14:18:49.650+0200","message":"Attempting to create a new tree"}
+{"level":"ERROR","time":"2023-07-23T14:18:49.650+0200","message":"Create and init tree","error":"create tree: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:8090: connect: connection refused\""}
+{"level":"INFO","time":"2023-07-23T14:18:57.533+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T14:18:57.534+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T14:18:57.616+0200","message":"Starting Chronometry server with active tree 4496647145698178016"}
+{"level":"DEBUG","time":"2023-07-23T14:19:14.143+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:19:16.946+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:29:58.838+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:30:48.443+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:31:14.575+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:31:35.675+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:32:19.171+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:32:36.508+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:32:55.549+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:33:31.876+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:33:46.507+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:34:05.812+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:34:34.138+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:35:02.045+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:35:39.211+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:35:57.068+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:36:15.076+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:37:17.611+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:37:38.238+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:38:12.202+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:38:24.205+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:38:45.771+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:38:56.903+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:39:19.803+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:39:59.898+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:40:45.163+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:40:45.992+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:40:46.720+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:40:56.971+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:41:12.902+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"DEBUG","time":"2023-07-23T14:42:05.332+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":4496647145698178016}
+{"level":"INFO","time":"2023-07-23T14:42:18.615+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T14:42:18.617+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T14:42:18.638+0200","message":"Starting Chronometry server with active tree 8802265225263305805"}
+{"level":"DEBUG","time":"2023-07-23T14:42:33.925+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8802265225263305805}
+{"level":"INFO","time":"2023-07-23T14:44:03.348+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T14:44:03.349+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T14:44:03.389+0200","message":"Starting Chronometry server with active tree 1533589095238510327"}
+{"level":"INFO","time":"2023-07-23T14:44:07.251+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T14:44:07.252+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T14:44:07.294+0200","message":"Starting Chronometry server with active tree 6720101107730660759"}
+{"level":"DEBUG","time":"2023-07-23T14:44:13.008+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":6720101107730660759}
+{"level":"DEBUG","time":"2023-07-23T14:45:02.900+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":6720101107730660759}
+{"level":"INFO","time":"2023-07-23T14:46:36.849+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T14:46:36.850+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T14:46:36.892+0200","message":"Starting Chronometry server with active tree 1679490486678222744"}
+{"level":"INFO","time":"2023-07-23T14:49:38.247+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T14:49:38.249+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T14:49:38.292+0200","message":"Starting Chronometry server with active tree 4408314942078412116"}
+{"level":"INFO","time":"2023-07-23T14:50:03.279+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T14:50:03.280+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T14:50:03.302+0200","message":"Starting Chronometry server with active tree 522432428852434026"}
+{"level":"DEBUG","time":"2023-07-23T14:50:12.660+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T14:50:25.527+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T14:50:28.715+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T14:50:36.419+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T14:51:47.091+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T14:55:51.159+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T14:58:30.172+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T14:58:33.660+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T14:58:54.504+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T14:59:01.369+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T14:59:11.534+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T14:59:14.988+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:00:05.494+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:00:09.086+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:00:53.166+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:01:12.588+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:01:21.274+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:01:26.403+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:01:58.658+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:02:07.420+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:02:26.728+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:02:31.871+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:02:34.951+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:02:58.420+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:03:29.849+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:04:07.809+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:04:11.478+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:04:25.987+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:04:30.044+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:04:32.244+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:04:34.147+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:04:47.114+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:04:48.924+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:04:51.675+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:04:58.821+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:05:01.735+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:05:06.295+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:05:57.406+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:05:57.413+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:05:57.417+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:06:01.052+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:06:28.354+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:06:34.569+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:06:36.808+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:07:09.112+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:07:48.912+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:08:40.821+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:11:07.451+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:11:30.507+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:11:59.137+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:12:01.889+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:12:10.489+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:12:13.142+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:12:29.942+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:12:46.711+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:14:47.417+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:15:34.905+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:16:06.539+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:20:07.024+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:21:01.703+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:23:24.342+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:23:54.933+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:24:21.647+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:24:32.343+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:24:36.441+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:24:39.228+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:25:05.537+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:25:08.002+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:25:28.935+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:25:41.246+0200","message":"Retrieving resolved index","resolvedIndex":3,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:25:42.732+0200","message":"Retrieving resolved index","resolvedIndex":4,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:25:43.955+0200","message":"Retrieving resolved index","resolvedIndex":5,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:25:45.322+0200","message":"Retrieving resolved index","resolvedIndex":6,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:26:40.401+0200","message":"Retrieving resolved index","resolvedIndex":6,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:27:23.091+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:27:25.326+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:27:28.094+0200","message":"Retrieving resolved index","resolvedIndex":67,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:29:02.669+0200","message":"Retrieving resolved index","resolvedIndex":67,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:32:21.961+0200","message":"Retrieving resolved index","resolvedIndex":67,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:32:35.975+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:32:40.694+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":522432428852434026}
+{"level":"DEBUG","time":"2023-07-23T15:32:42.791+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":522432428852434026}
+{"level":"INFO","time":"2023-07-23T15:34:51.506+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T15:34:51.507+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T15:34:51.568+0200","message":"Starting Chronometry server with active tree 6511561781896073653"}
+{"level":"DEBUG","time":"2023-07-23T15:35:21.678+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":6511561781896073653}
+{"level":"DEBUG","time":"2023-07-23T15:35:32.463+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":6511561781896073653}
+{"level":"INFO","time":"2023-07-23T17:15:17.612+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T17:15:17.612+0200","message":"Attempting to create a new tree"}
+{"level":"ERROR","time":"2023-07-23T17:15:17.613+0200","message":"Create and init tree","error":"create tree: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:8090: connect: connection refused\""}
+{"level":"INFO","time":"2023-07-23T17:15:35.058+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T17:15:35.059+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T17:15:35.146+0200","message":"Starting Chronometry server with active tree 2706837248925756093"}
+{"level":"DEBUG","time":"2023-07-23T17:16:06.468+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":2706837248925756093}
+{"level":"INFO","time":"2023-07-23T17:19:28.574+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T17:19:28.575+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T17:19:28.610+0200","message":"Starting Chronometry server with active tree 140827159447353222"}
+{"level":"DEBUG","time":"2023-07-23T17:20:23.252+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":140827159447353222}
+{"level":"INFO","time":"2023-07-23T17:48:05.607+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T17:48:05.609+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T17:48:05.695+0200","message":"Starting Chronometry server with active tree 8577914308967113317"}
+{"level":"INFO","time":"2023-07-23T17:49:30.197+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-23T17:49:30.198+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-23T17:49:30.223+0200","message":"Starting Chronometry server with active tree 622166355335018877"}
+{"level":"DEBUG","time":"2023-07-23T17:49:39.251+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":622166355335018877}
+{"level":"DEBUG","time":"2023-07-23T17:51:37.567+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"309d30d17dbcfd75f614932e95604889d2130f7d0e274ae114590ead0b70864f","treeID":622166355335018877}
+{"level":"DEBUG","time":"2023-07-23T17:51:42.043+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"309d30d17dbcfd75f614932e95604889d2130f7d0e274ae114590ead0b70864f","treeID":622166355335018877}
+{"level":"DEBUG","time":"2023-07-23T17:51:53.377+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":622166355335018877}
+{"level":"DEBUG","time":"2023-07-23T18:06:40.071+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":622166355335018877}
+{"level":"DEBUG","time":"2023-07-23T19:05:38.011+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":622166355335018877}
+{"level":"INFO","time":"2023-07-24T09:36:30.930+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T09:36:30.931+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T09:36:31.012+0200","message":"Starting Chronometry server with active tree 1847304028574481567"}
+{"level":"INFO","time":"2023-07-24T09:39:52.280+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T09:39:52.281+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T09:39:52.326+0200","message":"Starting Chronometry server with active tree 4682597491563082084"}
+{"level":"INFO","time":"2023-07-24T09:42:53.135+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T09:42:53.136+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T09:42:53.183+0200","message":"Starting Chronometry server with active tree 1809276040043482571"}
+{"level":"INFO","time":"2023-07-24T09:44:50.922+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T09:44:50.924+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T09:44:50.966+0200","message":"Starting Chronometry server with active tree 1395026689000929571"}
+{"level":"INFO","time":"2023-07-24T09:45:30.657+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T09:45:30.659+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T09:45:30.698+0200","message":"Starting Chronometry server with active tree 4810178699544320310"}
+{"level":"INFO","time":"2023-07-24T09:45:59.493+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T09:45:59.495+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T09:45:59.539+0200","message":"Starting Chronometry server with active tree 7438121047521784509"}
+{"level":"INFO","time":"2023-07-24T09:46:49.658+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T09:46:49.660+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T09:46:49.698+0200","message":"Starting Chronometry server with active tree 565498667329630235"}
+{"level":"DEBUG","time":"2023-07-24T09:47:18.483+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":565498667329630235}
+{"level":"DEBUG","time":"2023-07-24T09:49:09.536+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":565498667329630235}
+{"level":"INFO","time":"2023-07-24T09:49:15.513+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T09:49:15.515+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T09:49:15.544+0200","message":"Starting Chronometry server with active tree 1947303921188293660"}
+{"level":"DEBUG","time":"2023-07-24T09:49:38.883+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:49:40.947+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:49:42.692+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:50:42.613+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:50:58.647+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:51:22.378+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:51:23.863+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:51:27.854+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:51:51.521+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:51:54.389+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:52:53.089+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:52:54.786+0200","message":"Retrieving resolved index","resolvedIndex":3,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:52:56.139+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:54:36.085+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:54:38.865+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:55:06.189+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:55:16.484+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:55:25.537+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:55:43.245+0200","message":"Retrieving resolved index","resolvedIndex":3,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:55:48.377+0200","message":"Retrieving resolved index","resolvedIndex":4,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:55:52.556+0200","message":"Retrieving resolved index","resolvedIndex":5,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:55:57.961+0200","message":"Retrieving resolved index","resolvedIndex":6,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:58:48.939+0200","message":"Retrieving resolved index","resolvedIndex":6,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T09:59:02.007+0200","message":"Retrieving resolved index","resolvedIndex":6,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T10:00:37.442+0200","message":"Retrieving resolved index","resolvedIndex":6,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T10:00:52.144+0200","message":"Retrieving resolved index","resolvedIndex":6,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T10:01:13.237+0200","message":"Retrieving resolved index","resolvedIndex":6,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T10:01:15.374+0200","message":"Retrieving resolved index","resolvedIndex":6,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T10:05:24.109+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T10:05:26.804+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T10:15:56.835+0200","message":"Retrieving resolved index","resolvedIndex":88,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T10:19:39.883+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T10:26:38.627+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"be406cae5f746e02d2c1e69de195f2d89c908861770634a3ebe444465db87afe","treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T10:26:53.072+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T10:45:24.859+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T10:45:34.092+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":1947303921188293660}
+{"level":"DEBUG","time":"2023-07-24T10:53:19.326+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":1947303921188293660}
+{"level":"INFO","time":"2023-07-24T13:05:56.213+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T13:05:56.214+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T13:05:56.237+0200","message":"Starting Chronometry server with active tree 8798310552124065528"}
+{"level":"DEBUG","time":"2023-07-24T13:13:05.385+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T13:14:52.643+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T13:14:53.970+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T13:14:55.430+0200","message":"Retrieving resolved index","resolvedIndex":3,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T13:15:29.533+0200","message":"Retrieving resolved index","resolvedIndex":30,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T13:16:57.997+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"1a1f3f54cdba83de52db3437de8fab2d7c3d5b0692d0621e642f1fc69525d7ac","treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T13:34:57.100+0200","message":"Retrieving resolved index","resolvedIndex":89,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T13:35:38.863+0200","message":"Retrieving resolved index","resolvedIndex":34,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T13:35:45.765+0200","message":"Retrieving resolved index","resolvedIndex":55,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T13:36:22.632+0200","message":"Retrieving resolved index","resolvedIndex":24,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T13:37:14.900+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"7a46b76c1a5ea1cb58d49745c892df3f43f4c9b7bc291f99abb8c1286d59bb76","treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T13:42:01.691+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"7a46b76c1a5ea1cb58d49745c892df3f43f4c9b7bc291f99abb8c1286d59bb76","treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:37:18.697+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:39:30.295+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:39:45.610+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:39:55.601+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:40:22.301+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:40:36.963+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:40:45.559+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:40:53.969+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:41:12.620+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:41:33.448+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:44:28.656+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:44:33.099+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:44:36.911+0200","message":"Retrieving resolved index","resolvedIndex":123,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:45:06.473+0200","message":"Retrieving resolved index","resolvedIndex":123,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:45:21.864+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:45:26.872+0200","message":"Retrieving resolved index","resolvedIndex":123,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:45:49.373+0200","message":"Retrieving resolved index","resolvedIndex":123,"treeID":8798310552124065528}
+{"level":"DEBUG","time":"2023-07-24T14:45:55.057+0200","message":"Retrieving resolved index","resolvedIndex":12,"treeID":8798310552124065528}
+{"level":"INFO","time":"2023-07-24T14:51:44.105+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T14:51:44.107+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T14:51:44.127+0200","message":"Starting Chronometry server with active tree 4210157868283967927"}
+{"level":"INFO","time":"2023-07-24T14:52:18.842+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T14:52:18.843+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T14:52:18.891+0200","message":"Starting Chronometry server with active tree 2873196765667806087"}
+{"level":"DEBUG","time":"2023-07-24T14:52:30.436+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"29912308828015d2920df6861b0dbda4080aad6e4e5e91f75433969e31161c07","treeID":2873196765667806087}
+{"level":"DEBUG","time":"2023-07-24T15:44:56.105+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"309d30d17dbcfd75f614932e95604889d2130f7d0e274ae114590ead0b70864f","treeID":622166355335018877}
+{"level":"DEBUG","time":"2023-07-24T15:44:56.364+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":2873196765667806087}
+{"level":"INFO","time":"2023-07-24T16:05:57.345+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T16:05:57.345+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T16:05:57.365+0200","message":"Starting Chronometry server with active tree 2115391734110146406"}
+{"level":"DEBUG","time":"2023-07-24T16:06:26.465+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":2115391734110146406}
+{"level":"DEBUG","time":"2023-07-24T16:06:28.242+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":2115391734110146406}
+{"level":"DEBUG","time":"2023-07-24T16:06:30.260+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":2115391734110146406}
+{"level":"INFO","time":"2023-07-24T16:07:15.372+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T16:07:15.373+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T16:07:15.415+0200","message":"Starting Chronometry server with active tree 5219934421956476486"}
+{"level":"INFO","time":"2023-07-24T16:07:34.671+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T16:07:34.672+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T16:07:34.694+0200","message":"Starting Chronometry server with active tree 1777509174306710131"}
+{"level":"INFO","time":"2023-07-24T16:09:10.229+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T16:09:10.230+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T16:09:10.272+0200","message":"Starting Chronometry server with active tree 4172105634862894746"}
+{"level":"INFO","time":"2023-07-24T16:09:48.411+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T16:09:48.412+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T16:09:48.433+0200","message":"Starting Chronometry server with active tree 7579013027887097570"}
+{"level":"DEBUG","time":"2023-07-24T16:09:59.655+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":7579013027887097570}
+{"level":"DEBUG","time":"2023-07-24T16:10:08.503+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":7579013027887097570}
+{"level":"DEBUG","time":"2023-07-24T16:10:40.735+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":7579013027887097570}
+{"level":"DEBUG","time":"2023-07-24T16:35:24.964+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":7579013027887097570}
+{"level":"DEBUG","time":"2023-07-24T16:35:31.611+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":7579013027887097570}
+{"level":"DEBUG","time":"2023-07-24T16:35:49.363+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":7579013027887097570}
+{"level":"DEBUG","time":"2023-07-24T16:43:42.588+0200","message":"Retrieving resolved index","resolvedIndex":1,"treeID":7579013027887097570}
+{"level":"INFO","time":"2023-07-24T16:49:51.254+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T16:49:51.256+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T16:49:51.284+0200","message":"Starting Chronometry server with active tree 8640822432477660806"}
+{"level":"DEBUG","time":"2023-07-24T16:50:47.222+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:50:49.094+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"INFO","time":"2023-07-24T16:51:00.257+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-24T16:51:00.258+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-24T16:51:00.260+0200","message":"Starting Chronometry server with active tree 8640822432477660806"}
+{"level":"DEBUG","time":"2023-07-24T16:51:07.164+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:54:17.961+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:55:32.733+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:55:48.814+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:56:02.065+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:56:15.117+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:58:14.702+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:58:16.187+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:59:52.905+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T16:59:55.977+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T17:00:10.056+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T17:00:22.213+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"DEBUG","time":"2023-07-24T17:01:10.327+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"INFO","time":"2023-07-25T10:20:27.541+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T10:20:27.542+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-25T10:20:27.542+0200","message":"Starting Chronometry server with active tree 8640822432477660806"}
+{"level":"DEBUG","time":"2023-07-25T10:30:38.828+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":8640822432477660806}
+{"level":"INFO","time":"2023-07-25T10:31:16.088+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T10:31:16.089+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-25T10:31:16.133+0200","message":"Starting Chronometry server with active tree 6944128401157164942"}
+{"level":"DEBUG","time":"2023-07-25T10:31:20.258+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":6944128401157164942}
+{"level":"DEBUG","time":"2023-07-25T10:35:50.818+0200","message":"Retrieving resolved index","resolvedIndex":2,"treeID":6944128401157164942}
+{"level":"DEBUG","time":"2023-07-25T10:35:52.214+0200","message":"Retrieving resolved index","resolvedIndex":3,"treeID":6944128401157164942}
+{"level":"DEBUG","time":"2023-07-25T10:37:33.081+0200","message":"Retrieving resolved index","resolvedIndex":4,"treeID":6944128401157164942}
+{"level":"DEBUG","time":"2023-07-25T10:37:35.313+0200","message":"Retrieving resolved index","resolvedIndex":5,"treeID":6944128401157164942}
+{"level":"DEBUG","time":"2023-07-25T10:37:36.608+0200","message":"Retrieving resolved index","resolvedIndex":6,"treeID":6944128401157164942}
+{"level":"INFO","time":"2023-07-25T11:19:45.809+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T11:19:45.811+0200","message":"Attempting to create a new tree"}
+{"level":"ERROR","time":"2023-07-25T11:19:45.811+0200","message":"Create and init tree","error":"create tree: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:8090: connect: connection refused\""}
+{"level":"INFO","time":"2023-07-25T11:19:49.162+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T11:19:49.164+0200","message":"Attempting to create a new tree"}
+{"level":"ERROR","time":"2023-07-25T11:19:49.165+0200","message":"Create and init tree","error":"create tree: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:8090: connect: connection refused\""}
+{"level":"INFO","time":"2023-07-25T11:19:55.189+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T11:19:55.191+0200","message":"Attempting to create a new tree"}
+{"level":"ERROR","time":"2023-07-25T11:19:55.192+0200","message":"Create and init tree","error":"create tree: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:8090: connect: connection refused\""}
+{"level":"INFO","time":"2023-07-25T11:20:00.165+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T11:20:00.167+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-25T11:20:00.255+0200","message":"Starting Chronometry server with active tree 3616851979829606029"}
+{"level":"INFO","time":"2023-07-25T12:00:49.277+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T12:00:49.279+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-25T12:00:49.280+0200","message":"Starting Chronometry server with active tree 3616851979829606029"}
+{"level":"DEBUG","time":"2023-07-25T12:00:59.947+0200","message":"Retrieving resolved index","resolvedIndex":6,"treeID":3616851979829606029}
+{"level":"INFO","time":"2023-07-25T16:49:05.224+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T16:49:05.225+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-25T16:49:05.227+0200","message":"Starting Chronometry server with active tree 3616851979829606029"}
+{"level":"DEBUG","time":"2023-07-25T16:49:26.526+0200","message":"Retrieving resolved index","resolvedIndex":0,"treeID":3616851979829606029}
+{"level":"DEBUG","time":"2023-07-25T17:02:48.418+0200","message":"Retrieving resolved index","resolvedIndex":100,"treeID":3616851979829606029}
+{"level":"DEBUG","time":"2023-07-25T17:05:32.070+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"4ce64c3e3c8154d0fed02cfedf613b285329f333d2f2bd9dbbd2f3060c736542","treeID":3616851979829606029}
+{"level":"DEBUG","time":"2023-07-25T17:05:33.099+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"4ce64c3e3c8154d0fed02cfedf613b285329f333d2f2bd9dbbd2f3060c736542","treeID":3616851979829606029}
+{"level":"INFO","time":"2023-07-25T22:12:03.136+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T22:12:03.136+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-25T22:12:03.137+0200","message":"Starting Chronometry server with active tree 3616851979829606029"}
+{"level":"DEBUG","time":"2023-07-25T22:13:12.749+0200","message":"Attempting to retrieve UUID %v from TreeID %v","uuid":"50bf358bf7ccd3a5d81e9c1b0cf278dd2af462da863f01ac71b2f2318c706696","treeID":3616851979829606029}
+{"level":"DEBUG","time":"2023-07-25T22:14:14.472+0200","message":"Retrieving resolved index","resolvedIndex":102,"treeID":3616851979829606029}
+{"level":"DEBUG","time":"2023-07-25T22:14:16.451+0200","message":"Retrieving resolved index","resolvedIndex":101,"treeID":3616851979829606029}
+{"level":"INFO","time":"2023-07-25T22:35:59.796+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-25T22:35:59.797+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-25T22:35:59.797+0200","message":"Starting Chronometry server with active tree 3616851979829606029"}
+{"level":"DEBUG","time":"2023-07-25T22:43:16.533+0200","message":"Retrieving resolved index","resolvedIndex":110,"treeID":3616851979829606029}
+{"level":"INFO","time":"2023-07-26T07:53:27.264+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-26T07:53:27.265+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-26T07:53:27.265+0200","message":"Starting Chronometry server with active tree 3616851979829606029"}
+{"level":"INFO","time":"2023-07-26T07:56:19.934+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-26T07:56:19.935+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-26T07:56:19.936+0200","message":"Starting Chronometry server with active tree 3616851979829606029"}
+{"level":"INFO","time":"2023-07-26T07:57:15.775+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-26T07:57:15.775+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-26T07:57:15.776+0200","message":"Starting Chronometry server with active tree 3616851979829606029"}
+{"level":"INFO","time":"2023-07-26T07:57:35.024+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-26T07:57:35.024+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-26T07:57:35.025+0200","message":"Starting Chronometry server with active tree 3616851979829606029"}

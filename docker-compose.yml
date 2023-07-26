@@ -14,6 +14,8 @@ services:
       timeout: 3s
       retries: 3
       start_period: 10s
+    volumes:
+      - ./resources/mysql:/var/lib/mysql
     ports:
       - "3306:3306"
 
@@ -48,6 +50,25 @@ services:
       - "8092:8091"
     depends_on:
       - mysql
+      - redis-server
+
+  redis-server:
+    image: docker.io/redis:6.2
+    command: [
+      "--bind",
+      "0.0.0.0",
+      "--appendonly",
+      "yes"
+    ]
+    ports:
+      - "6379:6379"
+    restart: always # keep the redis server running
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
 
 networks:
   proxy:
@@ -62,6 +83,3 @@ networks:
     internal: true
     driver_opts:
       com.docker.network.bridge.name: dockerinter
-
-
-

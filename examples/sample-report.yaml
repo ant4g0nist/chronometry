@@ -1,0 +1,33 @@
+version: 628
+
+author:
+  name: John Doee
+  email: john@doe.io
+  url: https://yolo/hacker/john-doe
+
+platform: Yolo
+
+title: Sample Vulnerability Report 2
+
+description: 
+  This is a sample vulnerability report. It is intended to demonstrate the
+  capabilities of the vulnerability report format. 
+  
+  This is a multi-line description. It is intended to demonstrate the
+  capabilities of the vulnerability report format.
+
+severity: Critical
+
+attributes:
+  - name: Attribute 1
+    value:
+      This is a multi-line attribute value. It is intended to demonstrate the
+      capabilities of the vulnerability report format.
+  - name: Attribute 2
+    value: Value 2
+  
+attachments:
+  - name: Sample Attachment 1
+    path: ./examples/sample.zip
+  - name: Sample Attachment 2
+    path: ./examples/file_example_MP4_480_1_5MG.mp4

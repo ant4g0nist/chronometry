@@ -20,12 +20,11 @@ import (
 
 	"github.com/ant4g0nist/chronometry/cmds"
 	"github.com/ant4g0nist/chronometry/internal/log"
-
-	// "github.com/ant4g0nist/chronometry/model"
+	"github.com/ant4g0nist/chronometry/pkg/api"
+	"github.com/ant4g0nist/chronometry/pkg/util"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"go.uber.org/zap"
 	// kubernetes sig
 )
 
@@ -44,11 +43,17 @@ var (
 			fmt.Println("Starting Chronometry server @ " + version)
 
 			//load config
-			_, err := loadConfig()
+			cfg, err := loadConfig()
 			if err != nil {
-				log.Logger.Error("Failed to load the config", zap.Error(err))
+				fmt.Printf("Failed to load the config : %s\n", util.Red+err.Error()+util.Reset)
 				os.Exit(1)
 			}
+
+			// init logger
+			log.InitLogger(log.LoggerOpts(cfg.ServerConfig.Logger))
+
+			//start the server
+			api.StartServer(cfg)
 
 		},
 	}
