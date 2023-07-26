@@ -104,8 +104,9 @@ func (r *RecordEntryResponse) PrettyPrint() {
 		fmt.Println("      RootHash:", record.Verification.InclusionProof.RootHash)
 		fmt.Println("      TreeSize:", record.Verification.InclusionProof.TreeSize)
 		fmt.Println("    SignedEntryTimestamp:", record.Verification.SignedEntryTimestamp)
-		fmt.Println("  IPFS Cid:", entry.Cid)
-		// Author
+		if entry.Cid != "" {
+			fmt.Println("  IPFS Cid:", entry.Cid)
+		}
 	}
 }
 
@@ -153,8 +154,8 @@ func CheckServerReachable(server string) bool {
 /*
 Upload a vulnerability report to the server
 */
-func UploadReport(homedir string, server string, report string) error {
-	url := server + "/record"
+func UploadReport(homedir string, server string, report string, saveToIPFS bool) error {
+	url := server + "/record?ipfs=" + fmt.Sprintf("%t", saveToIPFS)
 
 	// read report
 	body, err := ioutil.ReadFile(report)

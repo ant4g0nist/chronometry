@@ -14,6 +14,8 @@
 package entries
 
 import (
+	"fmt"
+
 	"github.com/ant4g0nist/chronometry/pkg/config"
 	"github.com/ant4g0nist/chronometry/pkg/core/signature"
 	"github.com/ant4g0nist/chronometry/pkg/core/trillian_client"
@@ -31,6 +33,9 @@ Create a new Trillian Log Entry:
 func CreateEntry(ctx *fiber.Ctx) error {
 	cfg := ctx.Locals("cfg").(*config.CMConfig)
 	api := ctx.Locals("api").(*trillian_client.API)
+
+	saveToIPFS := ctx.Query("ipfs") == "true"
+	fmt.Println("saveToIPFS", saveToIPFS, ctx.Query("saveToIPFS")) //no
 
 	var createEntryRequest ICreateEntryRequest
 	if err := ctx.BodyParser(&createEntryRequest); err != nil {
@@ -60,7 +65,7 @@ func CreateEntry(ctx *fiber.Ctx) error {
 	signedBlob := signature.SignBlob(createEntryRequest.Report, cfg.PublicKey, cfg.PrivateKey)
 
 	// Create the entry
-	entry, err := trillian_client.CreateEntry(api.Redis, ctx.Context(), api, cfg, createEntryRequest.Report, signedBlob)
+	entry, err := trillian_client.CreateEntry(api.Redis, ctx.Context(), api, cfg, createEntryRequest.Report, signedBlob, saveToIPFS)
 
 	if err != nil {
 		return ctx.Status(fiber.StatusInternalServerError).JSON(fiber.Map{

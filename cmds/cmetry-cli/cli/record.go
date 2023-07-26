@@ -22,6 +22,8 @@ import (
 )
 
 var (
+	saveToIPFS bool
+
 	chronometryServer string
 
 	recordCmd = &cobra.Command{
@@ -43,7 +45,7 @@ var (
 			}
 
 			// upload the report
-			if err := client.UploadReport(keys_folder, chronometryServer, report); err != nil {
+			if err := client.UploadReport(keys_folder, chronometryServer, report, saveToIPFS); err != nil {
 				color.Red("❌The report could not be uploaded.")
 				os.Exit(1)
 			}
@@ -55,6 +57,9 @@ var (
 func init() {
 	recordCmd.Flags().StringVarP(&report, "file", "f", "", "The vulnerability report file to sign.")
 	recordCmd.MarkFlagRequired("file")
+
+	// Backup the PoH file to IPFS
+	recordCmd.Flags().BoolVarP(&saveToIPFS, "ipfs", "i", false, "Backup the PoH file to IPFS.")
 
 	recordCmd.PersistentFlags().StringVar(&keys_folder, "input", "~/.chronometry", "The folder to search the public and private key files.")
 

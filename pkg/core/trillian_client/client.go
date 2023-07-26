@@ -68,7 +68,7 @@ func CreateAndInitTree(ctx context.Context, adminClient trillian.TrillianAdminCl
 /*
 Create Entries
 */
-func CreateEntry(redis radix.Client, ctx context.Context, api *API, cfg *config.CMConfig, report signature.Report, signedReport signature.SignerBlob) (cclient.Entry, error) {
+func CreateEntry(redis radix.Client, ctx context.Context, api *API, cfg *config.CMConfig, report signature.Report, signedReport signature.SignerBlob, saveToIPFS bool) (cclient.Entry, error) {
 	fmt.Println("Create Sign Entry", signedReport)
 
 	var logEntry cclient.Entry
@@ -209,14 +209,16 @@ func CreateEntry(redis radix.Client, ctx context.Context, api *API, cfg *config.
 	}
 
 	// replicate on IPFS
-	sh := shell.NewShell("localhost:5001")
-	cid, err := sh.Add(bytes.NewReader(logEntry.Bytes()))
+	if saveToIPFS {
+		sh := shell.NewShell("localhost:5001")
+		cid, err := sh.Add(bytes.NewReader(logEntry.Bytes()))
 
-	logEntry.Cid = cid
+		if err != nil {
+			log.Logger.Error("Error in adding to IPFS", zap.Error(err))
+			return logEntry, err
+		}
 
-	if err != nil {
-		log.Logger.Error("Error in adding to IPFS", zap.Error(err))
-		return logEntry, err
+		logEntry.Cid = cid
 	}
 
 	return logEntry, nil
