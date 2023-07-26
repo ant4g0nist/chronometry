@@ -751,3 +751,6 @@
 {"level":"INFO","time":"2023-07-26T07:57:35.024+0200","message":"Starting Server"}
 {"level":"INFO","time":"2023-07-26T07:57:35.024+0200","message":"Attempting to create a new tree"}
 {"level":"INFO","time":"2023-07-26T07:57:35.025+0200","message":"Starting Chronometry server with active tree 3616851979829606029"}
+{"level":"INFO","time":"2023-07-26T08:13:24.813+0200","message":"Starting Server"}
+{"level":"INFO","time":"2023-07-26T08:13:24.814+0200","message":"Attempting to create a new tree"}
+{"level":"INFO","time":"2023-07-26T08:13:24.815+0200","message":"Starting Chronometry server with active tree 3616851979829606029"}
