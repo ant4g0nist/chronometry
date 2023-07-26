@@ -1,7 +1,0 @@
-{"severity":"INFO","time":"2023-06-23T07:21:15+02:00","message":"Starting Chronometry server @ {\n  \"gitVersion\": \"devel\",\n  \"gitCommit\": \"unknown\",\n  \"gitTreeState\": \"unknown\",\n  \"buildDate\": \"unknown\",\n  \"goVersion\": \"go1.20.5\",\n  \"compiler\": \"gc\",\n  \"platform\": \"darwin/arm64\"\n} %!v(MISSING)"}
-{"severity":"INFO","time":"2023-06-23T07:21:15+02:00","message":"Using config file{config 15 0 ~/.chronometry/cmetry-server.yaml <nil>}"}
-{"severity":"ERROR","time":"2023-06-23T07:21:15+02:00","message":"Failed to load the config{error 26 0  open ~/.chronometry/cmetry-server.yaml: no such file or directory}"}
-{"severity":"INFO","time":"2023-06-23T07:21:37+02:00","message":"Starting Chronometry server @ {\n  \"gitVersion\": \"devel\",\n  \"gitCommit\": \"unknown\",\n  \"gitTreeState\": \"unknown\",\n  \"buildDate\": \"unknown\",\n  \"goVersion\": \"go1.20.5\",\n  \"compiler\": \"gc\",\n  \"platform\": \"darwin/arm64\"\n} %!v(MISSING)"}
-{"severity":"INFO","time":"2023-06-23T07:21:37+02:00","message":"Using config file{config 15 0 ./config/cmetry-server.yaml <nil>}"}
-{"severity":"INFO","time":"2023-06-23T07:27:33+02:00","message":"Starting Chronometry server @ {\n  \"gitVersion\": \"devel\",\n  \"gitCommit\": \"unknown\",\n  \"gitTreeState\": \"unknown\",\n  \"buildDate\": \"unknown\",\n  \"goVersion\": \"go1.20.5\",\n  \"compiler\": \"gc\",\n  \"platform\": \"darwin/arm64\"\n} %!v(MISSING)"}
-{"severity":"INFO","time":"2023-06-23T07:27:33+02:00","message":"Using config file{config 15 0 ./config/cmetry-server.yaml <nil>}"}
