@@ -15,7 +15,7 @@ package cmds
 
 import "fmt"
 
-const Version = "v0.5.0"
+const Version = "v0.9.0"
 
 func Banner() {
 	banner := `
