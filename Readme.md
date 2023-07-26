@@ -3,7 +3,7 @@
 
 "Proof of Hack" refer to the evidence or demonstration that a hacker has successfully exploited a vulnerability in a system or application. This proof is used to verify the authenticity of the vulnerability report.
 
-<img src="resources/imgs/screen-1.png"  height=1200 width=1200 />
+<img src="resources/imgs/screen-1.png"/>
 
 Hackers usually tweet hashes as a means of sharing the details of a specific exploit or vulnerability with other members of the hacking community. The hash is a unique representation of a Proof-of-Concept file or a vulnerability report submitted to platforms like HackerOne/Yokai/ZDI, and can be used to confirm the authenticity of the data or to check if it has been tampered with. 
 
@@ -25,40 +25,32 @@ An append-only Log mode, analogous to the original Certificate Transparency logs
 
 ## Usage
 ### Installation
-#### Server
 ```sh
-$ git clone github.com/ant4g0nist/chronometry
-$ cd chronometry
-$ brew install ipfs
-```
-
-#### Client
-```sh
-$ brew cask install ant4g0nist/chronometry
+❯ brew tap ant4g0nist/tap
+❯ brew install cmetry
 ```
 
 ### Key Generation
 Generate a new Chronometry key pair:
 
 ```sh
-
 # Keys will be saved in ~/.chronometry/
-chronometry keys generate
+❯ cmetry keys generate
 
 # Keys will be saved in ~/mykeys/
-chronometry keys generate --output ~/mykeys/
+❯ cmetry keys generate --output ~/mykeys/
 
 # Keys will be saved in ~/mykeys/ with the name mykeys
-chronometry keys generate --output ~/mykeys/ --name mykeys
+❯ cmetry keys generate --output ~/mykeys/ --name mykeys
 
 # Keys and encrypt them with a passphrase
-CHRONOMETRY_PASSWORD=myPassPhrase chronometry keys generate --output ~/mykeys/ --name mykeys
+❯ CHRONOMETRY_PASSWORD=myPassPhrase cmetry keys generate --output ~/mykeys/ --name mykeys
 
 # Keys and encrypt them with a passphrase
-chronometry keys generate --output ~/mykeys/ --name mykeys --passphrase mypassphrase
+❯ cmetry keys generate --output ~/mykeys/ --name mykeys --passphrase mypassphrase
 
 # Keys non-interactively
-chronometry keys generate --output ~/mykeys/ --name mykeys --passphrase mypassphrase --yes
+❯ cmetry keys generate --output ~/mykeys/ --name mykeys --passphrase mypassphrase --yes
 ```
 
 
@@ -107,11 +99,11 @@ The above report format is used by Chronometry client to create a signature that
 
 ### Generate a PoH
 ```sh
-go run cmds/cmetry-cli/main.go sign -h
+❯ cmetry sign -h
 Sign the supplied Vulnerability Report. This command will generate a signed blob that can be posted to the Chronometry's public data store.
 
 Usage:
-  chronometry-cli sign [flags]
+  cmetry sign [flags]
 
 Flags:
   -b, --blob string               write the blob to FILE
@@ -126,7 +118,7 @@ Flags:
 
 If you have a report file `examples/sample-report.yaml` you can generate a PoH using the following command:
 ```sh
-go run cmds/cmetry-cli/main.go sign -f examples/sample-report.yaml --passphrase password -b output.poh -a
+❯ cmetry sign -f examples/sample-report.yaml --passphrase password -b output.poh -a
 ```
 
 `-a` flag is used to include the author's name in the report. By default, the author's name is hidden (so, author name in the PoH records will be `Anonymous`), only hash of the name is included in the signature. 
@@ -153,7 +145,7 @@ cat output.json
 ### Verify a PoH
 You can verify a PoH using the following command:
 ```sh
-❯ go run cmds/cmetry-cli/main.go verify -r output.poh
+❯ cmetry verify -r output.poh
 ⌛️Verifying signature...
 publicKey: Hp2mvMiSc1XFhBUGxaQc0br/CtJrNBkiMTUoORCzRP4=
 signature: JMFwICkm2mtVLhAYFi5LaCvfnQt8XY7LwonkNgx08jCX3kMjGg6iJoeATyGFelyN0z2X4BxEyq1N9ojaNimVAg==
@@ -162,7 +154,7 @@ signature: JMFwICkm2mtVLhAYFi5LaCvfnQt8XY7LwonkNgx08jCX3kMjGg6iJoeATyGFelyN0z2X4
 
 You can also verify a PoH record on the Chronometry's Trillian Log Server using the following command:
 ```sh
-❯ go run cmds/cmetry-cli/main.go verify -i 12 -s http://localhost:8008
+❯ cmetry verify -i 12 -s http://localhost:8008
 publicKey: Hp2mvMiSc1XFhBUGxaQc0br/CtJrNBkiMTUoORCzRP4=
 signature: sWKfA4/aD1hV0h36QpBEeIh5MTAM8IHPFNND2WFbz3m+3z60Ls6Srh6DkHIyyvQzgW7WjS8M/fpU/Fyprcu3Dw==
 ⌛️Verifying signature...
@@ -172,9 +164,9 @@ signature: sWKfA4/aD1hV0h36QpBEeIh5MTAM8IHPFNND2WFbz3m+3z60Ls6Srh6DkHIyyvQzgW7Wj
 ### Record a PoH
 To record the generated PoH on the Chronometry's Trillian Log Server, you can run a command similar to the following:
 ```sh
-❯ go run cmds/cmetry-cli/main.go record -f output.json -s http://localhost:8008
+❯ cmetry record -f output.json -s http://localhost:8008
 ETag: 29912308828015d2920df6861b0dbda4080aad6e4e5e91f75433969e31161c07
-Location: localhost:8008/record/7a19e0d4eaed06f829912308828015d2920df6861b0dbda4080aad6e4e5e91f75433969e31161c07
+Location: chronometry.io/?uuid=29912308828015d2920df6861b0dbda4080aad6e4e5e91f75433969e31161c07
 Payload:
   Key: 7a19e0d4eaed06f829912308828015d2920df6861b0dbda4080aad6e4e5e91f75433969e31161c07
   IntegratedTime: 1690202999
@@ -193,4 +185,3 @@ Report uploaded successfully
 
 ---
 - Author: [ant4g0nist](https://twitter.com/ant4g0nist)
-
