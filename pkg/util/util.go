@@ -15,7 +15,7 @@ package util
 
 import (
 	"crypto/rand"
-	"crypto/sha256"
+	"crypto/sha512"
 	"encoding/base64"
 	"os"
 	"path/filepath"
@@ -41,7 +41,7 @@ func BytesToKB(n int) float64 {
 }
 
 func CalculateHash(data []byte) string {
-	hash := sha256.Sum256(data)
+	hash := sha512.Sum512(data)
 	return base64.StdEncoding.EncodeToString(hash[:])
 }
 

@@ -15,7 +15,7 @@ package signature
 
 import (
 	"crypto/ed25519"
-	"crypto/sha256"
+	"crypto/sha512"
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
@@ -114,7 +114,7 @@ func SignReport(report report.VulnerabilityReport, publicKey ed25519.PublicKey, 
 	severityHash := base64.URLEncoding.EncodeToString(Hash(string(report.Severity)))
 	versionHash := base64.URLEncoding.EncodeToString(Hash(string(report.Version)))
 
-	attributeHash := sha256.New()
+	attributeHash := sha512.New()
 	for _, attribute := range report.Attributes {
 		hash := attribute.Hash()
 		attributeHash.Write(hash)
@@ -122,7 +122,7 @@ func SignReport(report report.VulnerabilityReport, publicKey ed25519.PublicKey, 
 
 	attributeHashSum := base64.URLEncoding.EncodeToString(attributeHash.Sum(nil))
 
-	attachmentsHash := sha256.New()
+	attachmentsHash := sha512.New()
 	for _, attachment := range report.Attachments {
 		hash := attachment.Hash()
 		attachmentsHash.Write(hash)
@@ -131,7 +131,7 @@ func SignReport(report report.VulnerabilityReport, publicKey ed25519.PublicKey, 
 	attachmentsHashSum := base64.URLEncoding.EncodeToString(attachmentsHash.Sum(nil))
 
 	// calculate hash of the entire report
-	reportHash := sha256.New()
+	reportHash := sha512.New()
 	reportHash.Write([]byte(versionHash))
 	reportHash.Write([]byte(authorHash))
 	reportHash.Write([]byte(authorDetailsHash))
@@ -167,7 +167,7 @@ func SignReport(report report.VulnerabilityReport, publicKey ed25519.PublicKey, 
 
 // Hash calculates the hash of a byte array
 func Hash(data string) []byte {
-	hash := sha256.Sum256([]byte(data))
+	hash := sha512.Sum512([]byte(data))
 	return hash[:]
 }
 
@@ -189,7 +189,7 @@ func SignBlob(report Report, publicKey ed25519.PublicKey, privateKey ed25519.Pri
 	attachmentsHash := base64.URLEncoding.EncodeToString(Hash(string(report.Attachments)))
 
 	// calculate hash of the entire report
-	reportHash := sha256.New()
+	reportHash := sha512.New()
 	reportHash.Write([]byte(versionHash))
 	reportHash.Write([]byte(authorHash))
 	reportHash.Write([]byte(authorDetailsHash))

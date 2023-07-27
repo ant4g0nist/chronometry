@@ -15,7 +15,7 @@ package signature
 
 import (
 	"crypto/ed25519"
-	"crypto/sha256"
+	"crypto/sha512"
 	"encoding/base64"
 	"fmt"
 	"os"
@@ -102,7 +102,7 @@ func verifyReport(report Report, publicKey []byte, signature []byte) bool {
 	// calculate hash of the entire report
 	authorHash := base64.URLEncoding.EncodeToString(Hash(report.Author))
 
-	reportHash := sha256.New()
+	reportHash := sha512.New()
 	reportHash.Write([]byte(report.Version))
 	reportHash.Write([]byte(authorHash))
 	reportHash.Write([]byte(report.AuthorDetailsHash))
