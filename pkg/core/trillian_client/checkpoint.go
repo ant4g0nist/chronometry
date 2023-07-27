@@ -19,7 +19,7 @@ import (
 	"bytes"
 	"context"
 	"crypto/ed25519"
-	"crypto/sha256"
+	"crypto/sha512"
 	"crypto/x509"
 	"encoding/base64"
 	"encoding/binary"
@@ -235,7 +235,7 @@ func (s *SignedNote) Sign(identity string, signer Signer) (*note.Signature, erro
 		return nil, fmt.Errorf("marshalling public key: %w", err)
 	}
 
-	pkSha := sha256.Sum256(pubKeyBytes)
+	pkSha := sha512.Sum512(pubKeyBytes)
 
 	signature := note.Signature{
 		Name:   identity,
@@ -258,7 +258,7 @@ func (s *SignedNote) Sign(identity string, signer Signer) (*note.Signature, erro
 //   - name is the string associated with the signer
 //   - signature is a base64 encoded string; the first 4 bytes of the decoded value is a
 //     hint to the public key; it is a big-endian encoded uint32 representing the first
-//     4 bytes of the SHA256 hash of the public key
+//     4 bytes of the sha512 hash of the public key
 func (s *SignedNote) UnmarshalText(data []byte) error {
 	sigSplit := []byte("\n\n")
 	// Must end with signature block preceded by blank line.

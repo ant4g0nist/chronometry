@@ -14,7 +14,7 @@
 package report
 
 import (
-	"crypto/sha256"
+	"crypto/sha512"
 	"os"
 
 	"github.com/fatih/color"
@@ -66,15 +66,15 @@ type Attribute struct {
 }
 
 func (a *Attribute) Hash() []byte {
-	// sha256 hash of the attribute name and value
-	hash := sha256.New()
+	// sha512 hash of the attribute name and value
+	hash := sha512.New()
 	hash.Write([]byte(a.Name))
 	hash.Write([]byte(a.Value))
 	return hash.Sum(nil)
 }
 
 func (a *Author) Hash() []byte {
-	hash := sha256.New()
+	hash := sha512.New()
 	hash.Write([]byte(a.Name))
 	hash.Write([]byte(a.Email))
 	hash.Write([]byte(a.URL))
@@ -90,8 +90,8 @@ type Attachment struct {
 }
 
 func (a *Attachment) Hash() []byte {
-	// sha256 hash of the attachment name and path
-	hash := sha256.New()
+	// sha512 hash of the attachment name and path
+	hash := sha512.New()
 	hash.Write([]byte(a.Name))
 	// read file from path and hash it
 	file, err := os.ReadFile(a.Path)

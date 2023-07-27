@@ -18,7 +18,7 @@ import (
 	"crypto/cipher"
 	"crypto/ed25519"
 	"crypto/rand"
-	"crypto/sha256"
+	"crypto/sha512"
 	"errors"
 	"strings"
 
@@ -178,7 +178,7 @@ func EncryptPEMBlock(data []byte, passphrase []byte) (*pem.Block, error) {
 		return nil, err
 	}
 
-	key := pbkdf2.Key(passphrase, salt, 4096, 32, sha256.New)
+	key := pbkdf2.Key(passphrase, salt, 4096, 32, sha512.New)
 
 	// Generate a random initialization vector (IV)
 	iv := make([]byte, aes.BlockSize)
@@ -219,7 +219,7 @@ func DecryptPEMBlock(pblock *pem.Block, passphrase []byte) ([]byte, error) {
 	ciphertext := pblock.Bytes
 
 	// Derive the encryption key from the passphrase and salt using PBKDF2
-	key := pbkdf2.Key(passphrase, salt, 4096, 32, sha256.New)
+	key := pbkdf2.Key(passphrase, salt, 4096, 32, sha512.New)
 
 	// Create a new AES cipher block
 	block, err := aes.NewCipher(key)
