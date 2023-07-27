@@ -188,5 +188,8 @@ Payload:
 Report uploaded successfully
 ```
 
+### TODO
+- [ ] Add tests & fuzzers
+
 ---
 - Author: [ant4g0nist](https://twitter.com/ant4g0nist)
