@@ -53,23 +53,23 @@ func (r *Report) Validate() error {
 	/*
 		Every attribute of the report must be a 32 byte base64 encoded hash.
 	*/
-	if len(r.Version) != 44 {
+	if len(r.Version) != 88 {
 		return report.ErrInvalidVersion
 	}
 
-	if len(r.Title) != 44 {
+	if len(r.Title) != 88 {
 		return report.ErrorInvalidTitle
 	}
 
-	if len(r.Description) != 44 {
+	if len(r.Description) != 88 {
 		return report.ErrorInvalidDescription
 	}
 
-	if len(r.Attributes) != 44 {
+	if len(r.Attributes) != 88 {
 		return report.ErrorInvalidAttributes
 	}
 
-	if len(r.AuthorDetailsHash) != 44 {
+	if len(r.AuthorDetailsHash) != 88 {
 		return report.ErrorInvalidAuthor
 	}
 
@@ -77,15 +77,15 @@ func (r *Report) Validate() error {
 		return report.ErrorInvalidAuthorName
 	}
 
-	if len(r.Platform) != 44 {
+	if len(r.Platform) != 88 {
 		return report.ErrorInvalidPlatform
 	}
 
-	if len(r.Severity) != 44 {
+	if len(r.Severity) != 88 {
 		return report.ErrorInvalidSeverity
 	}
 
-	if len(r.Attachments) != 44 {
+	if len(r.Attachments) != 88 {
 		return report.ErrorInvalidAttachments
 	}
 
