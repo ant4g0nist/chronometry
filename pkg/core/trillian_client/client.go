@@ -430,7 +430,7 @@ func logEntryFromLeaf(ctx context.Context, cfg *config.CMConfig, tc TrillianClie
 	logEntry = cclient.Entry{
 		Payload:  payload,
 		ETag:     uuid,
-		Location: cfg.ServerConfig.HTTPBind + "/entry" + entryID,
+		Location: cfg.ServerConfig.Hostname + "/entry" + entryID,
 	}
 
 	return logEntry, nil
